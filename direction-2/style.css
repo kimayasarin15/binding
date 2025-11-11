@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* from MDN use local files */
+@font-face {
+    font-family: "PP Right Didone";
+    src: url("../fonts/PP Right Didone - Medium.otf") format("opentype");
+}
+
+
+:root {
+    font-size: 100%;
+    --backgroundcolor: #1f1f1f;
+    --color: #D6D6D6;
+    --accent: #EE72FF;
+}
+
+body {
+    background-color: var(--backgroundcolor);
+    color: var(--color);
+    padding-inline: 1rem;
+}
+
+
+h1 {
+    font-family: "PP Right Didone";
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 90%;
+    margin-block: 3rem;
+    background-color: var(--accent);
+    color: var(--backgroundcolor);
+    /* from MDN text box trim and edge trial and error to get it to work */
+    text-box-edge: cap alphabetic;
+    text-box-trim: trim-both;   
+    text-align: left;
+    margin-inline-start: -1rem;
+
+}
+
+h2 {
+    font-family: "PP Right Didone";
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 90%;
+    padding-block-end: 2rem;
+    color: var(--accent);
+    
+
+}
+
+
+article ol li {
+      padding-block: 3rem;
+}
+
+article ol {
+    list-style-type: decimal;
+    /* from MDN how to bring the list inside */
+    list-style-position: inside;
+    padding-block: 3rem;
+}
+
+article ol li::marker {
+    font-family: "PP Right Didone";
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.2rem;
+    line-height: 120%;
+}
+
+strong {
+    font-style: italic;
+    color: var(--accent);
+}
+
