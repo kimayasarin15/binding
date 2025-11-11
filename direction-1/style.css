@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
 :root {
     font-size: 100%;
     --maincolor: #181818;
@@ -9,6 +20,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    /* font-family: "Helvetica"; trying different typefaces - deciding between the two  */
     padding-inline-end: 3rem;
 }
 
@@ -45,7 +57,7 @@ header {
 }
     
 h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
     line-height: 90%;
     text-transform: uppercase;
@@ -55,21 +67,25 @@ h1 {
 }
 
 h2 {
+    border-block-end: solid;
+    border-color: var(--maincolor);
+    border-width: 0.1rem;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 90%;
     color: var(--maincolor);
     text-transform: uppercase;
-    /* padding-block-start: 2rem;
-    padding-block-end: 1rem; */
+    padding-block-end: 2rem;
 
 }
+
 
 
 article ol {
     list-style-type: decimal;
     /* from MDN how to bring the list inside */
     list-style-position: inside;
+    padding-block: 3rem;
 }
 
 article ol li {
@@ -107,7 +123,6 @@ strong {
     font-weight: 500;
     background-color: var(--accentcolor);
     color: var(--lightcolor);
-    padding: 0.2rem;
     display: inline-block;
 }
 
@@ -133,6 +148,7 @@ p {
     font-size: 1.2rem;
     line-height: 140%;
     color: var(--maincolor);
+    padding-block: 1rem;
 }
 
 span {
