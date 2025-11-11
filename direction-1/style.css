@@ -18,7 +18,9 @@ nav li {
 
 }
 
-
+nav ul {
+    padding-inline-start: 1rem;
+}
 h1 {
     font-size: 4rem;
     font-weight: 700;
