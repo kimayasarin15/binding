@@ -5,7 +5,6 @@
     --maincolor: #181818;
     --accentcolor: #3631FB;
     --lightcolor: white;
-    --secondaccent: #EF483C;
 }
 
 body {
@@ -30,12 +29,15 @@ nav ul {
     height: 100vh;
     align-items: center;
     font-size: 1.2rem;
-    background-color: white;
-    gap: 2rem;
+    font-weight: 500;
+    background-color: var(--accentcolor);
+    color: var(--lightcolor);
+    gap: 2.5rem;
     padding-block: 1rem;
-    border-inline: solid;
+    /* border-inline: solid;
     border-color: var(--maincolor);
-    border-width: 0.1rem;
+    border-width: 0.1rem; */
+
 }
 
 header {
@@ -48,7 +50,7 @@ h1 {
     line-height: 90%;
     text-transform: uppercase;
     color: var(--maincolor);
-    padding-block-end: 4rem;
+    padding-block: 4rem;
     padding-inline: 1rem;
 }
 
@@ -58,36 +60,46 @@ h2 {
     line-height: 90%;
     color: var(--maincolor);
     text-transform: uppercase;
-    padding-block-start: 2rem;
-    padding-block-end: 1rem;
+    /* padding-block-start: 2rem;
+    padding-block-end: 1rem; */
 
 }
 
 
 article ol {
     list-style-type: decimal;
+    /* from MDN how to bring the list inside */
+    list-style-position: inside;
+}
+
+article ol li {
+      padding-block: 2rem;
 }
 
 article ol li::marker {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
-    display: block;
-    background-color: var(--secondaccent);
-    color: var(--lightcolor);
-    padding: 3rem;
-    
+    font-size: 2rem;
+    color: var(--accentcolor);  
 }
 
 
 .author {
+    border-block: solid;
+    border-color: var(--maincolor);
+    border-width: 0.1rem;
+
+    p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 90%;
     text-transform: uppercase;
     color: var(--accentcolor);
-    padding-block-start: 1rem;
+    padding-block: 1rem;
     padding-inline-start: 1rem;
+
+
+    }
 }
 
 
@@ -108,10 +120,10 @@ footer {
     text-transform: uppercase;
     color: var(--accentcolor);
     margin-block-start: 3rem;
+    border-block: solid;
+    border-color: var(--maincolor);
+    border-width: 0.1rem;
 }
-
-
-
 
 .bottom {
     padding-block: 1rem;
@@ -121,13 +133,16 @@ p {
     font-size: 1.2rem;
     line-height: 140%;
     color: var(--maincolor);
-    
-    
 }
 
 span {
-    background-color: var(--secondaccent);
+    background-color: var(--accentcolor);
     color: var(--lightcolor);
     padding: 0.5rem;
     display: inline-block;
 }
+
+a {
+    text-decoration: underline;
+}
+
