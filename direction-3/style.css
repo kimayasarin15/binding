@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "PP Editorial Old";
+    src: url("../fonts/PPEditorialOld-Ultralight.otf") format("opentype");
+}
+
+:root {
+    font-size: 110%;
+    --backgroundcolor: white;
+    --color: #ff0019;
+}
+
+body {
+    background-color: var(--backgroundcolor);
+    color: var(--color);
+    font-family: "PP Editorial Old";
+    padding-inline: 1rem;
+}
+
+h1 {
+font-family: "PP Editorial Old";
+text-transform: uppercase;
+font-size: 3.8rem;
+line-height: 100%;
+width: 100vw;
+padding-block: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 110%;
+    padding-block: 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.author {
+    font-size: 2rem;
+    line-height: 110%;
+    padding-block-end: 3rem;
+
+}
