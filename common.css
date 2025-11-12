@@ -25,7 +25,7 @@ h1 {
     font-weight: 700;
     line-height: 90%;
     text-transform: uppercase;
-    color: var(--maincolor);
+    color: black;
     padding-block: 3rem;
     padding-inline: 1rem;
 }
@@ -43,4 +43,18 @@ nav {
 
 li {
       padding-inline: 1rem;
+      color: white;
+      padding-block: 1rem;
+}
+
+li:first-child {
+    background-color: #3631FB;
+}
+
+li:nth-child(2) {
+    background-color: #EB51FF;
+}
+
+li:last-child {
+    background-color: #ff0019;;
 }
