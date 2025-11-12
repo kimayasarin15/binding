@@ -15,10 +15,9 @@ body {
     font-family: "PP Editorial Old";
     padding-inline: 1rem;
     /* trying a background image - used MDN */
-    background: url('/Users/kimayasarin/Desktop/MPSCD/Type & Interaction/binding/img1.png');
+    background: url(./img1.png);
     background-position: center;
     background-size: 100rem;
-    background-blend-mode: luminosity;
 
 }
 
