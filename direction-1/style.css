@@ -46,7 +46,7 @@ nav ul {
     font-weight: 500;
     background-color: var(--accentcolor);
     color: var(--lightcolor);
-    gap: 2.5rem;
+    gap: 0.5rem;
     padding-block: 1rem;
     /* border-inline: solid;
     border-color: var(--maincolor);
