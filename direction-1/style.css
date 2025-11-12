@@ -144,7 +144,7 @@ footer {
     /* margin-block-start: 3rem; */
     border-block: solid;
     border-color: var(--maincolor);
-    border-top-width: 5rem;
+    border-top-width: 4rem;
     border-bottom-width: 0.1rem;
 }
 
@@ -174,7 +174,7 @@ a {
 /* I don't think this is the right way to do it but I wanted to try bringing in some graphic shapes
 - this could potenially be used as a nav between the site */
 
-.blue {
+/* .blue {
     background-color: var(--accentcolor);
     color: var(--accentcolor);
     padding: 1rem;
@@ -190,4 +190,13 @@ a {
         padding: 1rem;
         margin-inline-end: 6rem;
         border-left: none;
+
     }
+
+.stroke:first-child {
+    border-top: none;
+}
+
+.stroke:nth-child(2) {
+    border-bottom: none;
+} */
