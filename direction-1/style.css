@@ -54,6 +54,22 @@ nav ul {
 
 }
 
+nav ol {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+}
+
+nav ol li {
+     background-color: var(--accentcolor);
+     color: var(--lightcolor);
+     padding: 0.6rem;
+}
+
+nav ol li:first-child {
+    background-color: var(--maincolor);
+}
+
 header {
     padding-block-end: 2rem;
 }
@@ -91,7 +107,7 @@ article ol {
 }
 
 article ol li {
-      padding-block: 2rem;
+      padding-block: 2em;
       padding-inline: 1rem;
 }
 
