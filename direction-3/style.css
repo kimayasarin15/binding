@@ -14,7 +14,7 @@ body {
     color: var(--color);
     font-family: "PP Editorial Old";
     padding-inline: 1rem;
-    /* trying a background image */
+    /* trying a background image - used MDN */
     background: url('/Users/kimayasarin/Desktop/MPSCD/Type & Interaction/binding/img1.png');
     background-position: center;
     background-size: 100rem;
@@ -46,7 +46,7 @@ h2 {
 
     P{
     font-size: 1.8rem;
-    line-height: 100%;
+    line-height: 110%;
     }
 }
 
@@ -58,6 +58,11 @@ p{
 footer {
     padding-block-start: 4rem;
     padding-block-end: 1rem;
+
+    p{
+    font-size: 1.8rem;
+    line-height: 110%;
+    }
 }
 
 article {
@@ -67,6 +72,5 @@ article {
 }
 
 svg {
-    background-color: #ff0019;
-    fill: white;
+    background-color: var(--color)
 }

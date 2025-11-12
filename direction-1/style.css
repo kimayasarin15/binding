@@ -141,7 +141,6 @@ footer {
     line-height: 90%;
     text-transform: uppercase;
     color: var(--accentcolor);
-    /* margin-block-start: 3rem; */
     border-block: solid;
     border-color: var(--maincolor);
     border-top-width: 4rem;
@@ -171,6 +170,15 @@ a {
     text-decoration: underline;
 }
 
+/* tried it with svgs */
+svg {
+    display: block;
+}
+
+line {
+    stroke: var(--accentcolor);
+    stroke-width: 3rem;
+}
 /* I don't think this is the right way to do it but I wanted to try bringing in some graphic shapes
 - this could potenially be used as a nav between the site - I can do this with svgs I think */
 
