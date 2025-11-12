@@ -58,12 +58,16 @@ nav ol {
     display: flex;
     flex-direction: row;
     font-size: 1rem;
+
 }
 
 nav ol li {
      background-color: var(--accentcolor);
      color: var(--lightcolor);
      padding: 0.6rem;
+      a {
+        text-decoration: none;
+    }
 }
 
 nav ol li:first-child {

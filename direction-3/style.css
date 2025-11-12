@@ -73,3 +73,18 @@ article {
 svg {
     background-color: var(--color)
 }
+
+
+nav ol {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    margin-inline-end: -1rem;
+    padding-block: 1rem;
+}
+
+nav ol li {
+    background-color: var(--color);
+    color: var(--backgroundcolor);
+    padding: 0.5rem;
+}
