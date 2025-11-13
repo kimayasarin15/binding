@@ -115,7 +115,7 @@ article ol li {
       padding-inline: 1rem;
 }
 
-article ol li::marker {
+article ol li::before {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2rem;
