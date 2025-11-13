@@ -83,7 +83,7 @@ article ol {
     list-style-position: inside;
 }
 
-article ol li::marker {
+article ol li::before {
     font-family: "PP Right Didone";
     font-size: 2rem;
     color: var(--accent);

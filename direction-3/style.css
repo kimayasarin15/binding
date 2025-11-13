@@ -17,7 +17,7 @@ body {
     /* trying a background image - used MDN */
     background: url(./img1.png);
     background-position: center;
-    background-size: 100rem;
+    background-size: 150rem;
 
 }
 
@@ -45,12 +45,12 @@ h2 {
 
     P{
     font-size: 1.8rem;
-    line-height: 110%;
+    line-height: 120%;
     }
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 150%;
 }
 
@@ -87,4 +87,8 @@ nav ol li {
     background-color: var(--color);
     color: var(--backgroundcolor);
     padding: 0.5rem;
+}
+
+a { 
+    text-decoration: underline;
 }
