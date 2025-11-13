@@ -24,56 +24,6 @@ body {
     padding-inline-end: 3rem;
     
 }
-
-
-nav li {
-    display: block;
-    text-transform: uppercase;
-    padding: 1rem;
-
-}
-
-/* from class how to create column */
-nav ul {
-    position: fixed; 
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: var(--accentcolor);
-    color: var(--lightcolor);
-    gap: 0.5rem;
-    padding-block: 1rem;
-    /* border-inline: solid;
-    border-color: var(--maincolor);
-    border-width: 0.1rem; */
-
-}
-
-nav ol {
-    display: flex;
-    flex-direction: row;
-    font-size: 1rem;
-
-}
-
-nav ol li {
-     background-color: var(--accentcolor);
-     color: var(--lightcolor);
-     padding: 0.6rem;
-      a {
-        text-decoration: none;
-    }
-}
-
-nav ol li:first-child {
-    background-color: var(--maincolor);
-}
-
 header {
     padding-block-end: 2rem;
 }
@@ -101,7 +51,76 @@ h2 {
 
 }
 
+p {
+    font-size: 1.2rem;
+    line-height: 140%;
+    color: var(--maincolor);
+    padding-block: 1rem;
 
+}
+
+/* title highlight */
+span {
+    background-color: var(--accentcolor);
+    color: var(--lightcolor);
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+
+/* this is my footnote list */
+ul li {
+    display: block;
+    text-transform: uppercase;
+    padding: 1rem;
+
+}
+
+/* from class how to create column */
+ul {
+    position: fixed; 
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--accentcolor);
+    color: var(--lightcolor);
+    gap: 0.5rem;
+    padding-block: 1rem;
+    /* border-inline: solid;
+    border-color: var(--maincolor);
+    border-width: 0.1rem; */
+
+}
+
+/* my top nav bar for getting between pages */
+nav ol {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+
+}
+
+nav ol li {
+     background-color: var(--accentcolor);
+     color: var(--lightcolor);
+     padding: 0.6rem;
+      a {
+        text-decoration: none;
+    }
+}
+
+nav ol li:first-child {
+    background-color: var(--maincolor);
+}
+
+
+
+/* ordered list of footnotes */
 
 article ol {
     list-style-type: decimal;
@@ -122,6 +141,7 @@ article ol li::before {
     color: var(--accentcolor);  
 }
 
+/* section on the author and orginal article */
 
 .author {
     border-block: solid;
@@ -169,21 +189,6 @@ footer {
 
 .bottom {
     padding-block: 1rem;
-}
-
-p {
-    font-size: 1.2rem;
-    line-height: 140%;
-    color: var(--maincolor);
-    padding-block: 1rem;
-
-}
-
-span {
-    background-color: var(--accentcolor);
-    color: var(--lightcolor);
-    padding: 0.5rem;
-    display: inline-block;
 }
 
 a {

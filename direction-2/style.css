@@ -47,11 +47,13 @@ h2 {
     color: var(--accent);
 }
 
+/* created a sticky class */
 .sticky {
     position: sticky;
     top: 0;
 
 }
+/* top nav bar */
 nav ol {
     display: flex;
     margin-inline-start: -1rem;
@@ -72,6 +74,7 @@ nav ol li {
    
 }
 
+/* ordered list content */
 article ol li {
       padding-block: 3rem;
    
@@ -83,6 +86,7 @@ article ol {
     list-style-position: inside;
 }
 
+/* trying before tag but styling isn't working */
 article ol li::before {
     font-family: "PP Right Didone";
     font-size: 2rem;

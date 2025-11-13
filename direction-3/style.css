@@ -3,6 +3,7 @@
     src: url("../fonts/PPEditorialOld-Ultralight.otf") format("opentype");
 }
 
+/* still confused about some of the variables ie calc need to input for next round */
 :root {
     font-size: 110%;
     --backgroundcolor: white;
@@ -44,7 +45,7 @@ h2 {
     padding-block-end: 3rem;
     padding-block-start: 1rem;
 
-    P{
+    p{
     font-size: 1.8rem;
     line-height: 120%;
     }
@@ -75,10 +76,12 @@ article {
     }
 }
 
+/* svg styling */
 svg {
     background-color: var(--color)
 }
 
+/* top nav */
 
 nav ol {
     display: flex;
