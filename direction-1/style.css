@@ -16,26 +16,29 @@
     --maincolor: #181818;
     --accentcolor: #3631FB;
     --lightcolor: white;
+    --padding: 1rem;
+    --lineheight: 100%
 }
 
+/* finally sorta understadning calc and var - tried it for padding and line height on direction 1 */
 body {
     font-family: "Poppins", sans-serif;
     /* font-family: "Helvetica"; trying different typefaces - deciding between the two  */
-    padding-inline-end: 3rem;
+    padding-inline-end: calc(var(--padding)*3);
     
 }
 header {
-    padding-block-end: 2rem;
+    padding-block-end: calc(var(--padding)*2);
 }
     
 h1 {
     font-size: 3.2rem;
     font-weight: 700;
-    line-height: 90%;
+    line-height: calc(var(--lineheight)*0.9);
     text-transform: uppercase;
     color: var(--maincolor);
-    padding-block: 4rem;
-    padding-inline: 1rem;
+    padding-block: calc(var(--padding)*4);
+    padding-inline: var(--padding);
 }
 
 h2 {
@@ -44,18 +47,18 @@ h2 {
     border-width: 0.1rem;
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 90%;
+    line-height: calc(var(--lineheight)*0.9);
     color: var(--maincolor);
     text-transform: uppercase;
-    padding-block-end: 2rem;
+    padding-block-end: calc(var(--padding)*2);
 
 }
 
 p {
     font-size: 1.2rem;
-    line-height: 140%;
+    line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
-    padding-block: 1rem;
+    padding-block: var(--padding);
 
 }
 
@@ -63,7 +66,7 @@ p {
 span {
     background-color: var(--accentcolor);
     color: var(--lightcolor);
-    padding: 0.5rem;
+    padding: calc(var(--padding)/2);
     display: inline-block;
 }
 
@@ -72,7 +75,7 @@ span {
 ul li {
     display: block;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: var(--padding);
 
 }
 
@@ -90,7 +93,7 @@ ul {
     background-color: var(--accentcolor);
     color: var(--lightcolor);
     gap: 0.5rem;
-    padding-block: 1rem;
+    padding-block: var(--padding);
     /* border-inline: solid;
     border-color: var(--maincolor);
     border-width: 0.1rem; */
@@ -106,9 +109,9 @@ nav ol {
 }
 
 nav ol li {
-     background-color: var(--accentcolor);
-     color: var(--lightcolor);
-     padding: 0.6rem;
+    background-color: var(--accentcolor);
+    color: var(--lightcolor);
+    padding: calc(var(--padding)*0.7);
       a {
         text-decoration: none;
     }
@@ -137,8 +140,8 @@ article ol {
 }
 
 article ol li {
-      padding-block: 2em;
-      padding-inline: 1rem;
+    padding-block: calc(var(--padding)*2);
+    padding-inline: var(--padding);
 }
 
 /* styling numbers */
@@ -166,8 +169,8 @@ article ol li::before {
     line-height: 90%;
     text-transform: uppercase;
     color: var(--accentcolor);
-    padding-block: 1rem;
-    padding-inline-start: 1rem;
+    padding-block: var(--padding);
+    padding-inline-start: var(--padding);
 
 
     }
@@ -182,11 +185,11 @@ strong {
 }
 
 footer {
-    padding-block: 2rem;
-    padding-inline-start: 1rem;
+    padding-block: calc(var(--padding)*2);
+    padding-inline-start: var(--padding);
     font-size: 1.5rem;
     font-weight: 500;
-    line-height: 90%;
+    line-height: calc(var(--lineheight)*0.9);
     text-transform: uppercase;
     color: var(--accentcolor);
     border-block: solid;
@@ -196,7 +199,7 @@ footer {
 }
 
 .bottom {
-    padding-block: 1rem;
+    padding-block: var(--padding);
 }
 
 a {
