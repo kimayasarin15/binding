@@ -81,9 +81,15 @@ article ol li {
 }
 
 article ol {
-    list-style-type: decimal;
+    /* list-style-type: decimal; */
     /* from MDN how to bring the list inside */
     list-style-position: inside;
+     counter-reset: index;
+
+	> li::before {
+		content: counters(index, '.') '.';
+		counter-increment: index;
+	}
 }
 
 /* trying before tag but styling isn't working */
@@ -96,7 +102,7 @@ article ol li::before {
 p {
     font-family: "DM Sans", sans-serif;
     font-size: 1.2rem;
-    line-height: 140%;
+    line-height: 150%;
 }
 
 article p {

@@ -123,10 +123,17 @@ nav ol li:first-child {
 /* ordered list of footnotes */
 
 article ol {
-    list-style-type: decimal;
+    /* list-style-type: decimal; */
     /* from MDN how to bring the list inside */
     list-style-position: inside;
     /* padding-block: 3rem; */
+    /* from slack how to add numbers with ::before */
+    counter-reset: index;
+
+	> li::before {
+		content: counters(index, '.') '.';
+		counter-increment: index;
+	}
 }
 
 article ol li {
@@ -134,6 +141,7 @@ article ol li {
       padding-inline: 1rem;
 }
 
+/* styling numbers */
 article ol li::before {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
