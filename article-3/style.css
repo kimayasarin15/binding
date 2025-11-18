@@ -23,8 +23,7 @@
 /* finally sorta understadning calc and var - tried it for padding and line height on direction 1 */
 body {
     font-family: "Poppins", sans-serif;
-    /* font-family: "Helvetica"; trying different typefaces - deciding between the two  */
-    padding-inline-end: calc(var(--padding)*3);
+    /* padding-inline-end: calc(var(--padding)*3); */
     
 }
 header {
@@ -42,15 +41,13 @@ h1 {
 }
 
 h2 {
-    border-block-end: solid;
-    border-color: var(--maincolor);
-    border-width: 0.1rem;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: calc(var(--lineheight)*0.9);
     color: var(--maincolor);
     text-transform: uppercase;
-    padding-block-end: calc(var(--padding)*2);
+    padding-block-end: calc(var(--padding)*1);
+    padding-inline: var(--padding);
 
 }
 
@@ -197,6 +194,10 @@ footer {
     border-color: var(--maincolor);
     border-top-width: 4rem;
     border-bottom-width: 0.1rem;
+
+     p {
+        padding-inline: 0;
+    }
 }
 
 .bottom {

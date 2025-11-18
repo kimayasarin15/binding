@@ -14,7 +14,7 @@
 body {
     font-family: "Poppins", sans-serif;
     /* font-family: "Helvetica"; trying different typefaces - deciding between the two  */
-    padding-inline-end: calc(var(--padding)*3);
+    /* padding-inline-end: calc(var(--padding)*3); */
     
 }
 header {
@@ -164,7 +164,7 @@ article ol li::before {
     p {
     font-size: 1.5rem;
     font-weight: 500;
-    line-height: 90%;
+    line-height: 100%;
     text-transform: uppercase;
     color: var(--accentcolor);
     padding-block: var(--padding);
@@ -224,32 +224,3 @@ line {
     stroke-width: 3rem;
 }
 
-/* I don't think this is the right way to do it but I wanted to try bringing in some graphic shapes
-- this could potenially be used as a nav between the site - I can do this with svgs I think */
-
-/* .blue {
-    background-color: var(--accentcolor);
-    color: var(--accentcolor);
-    padding: 1rem;
-    margin-inline-end: 3rem;
-}
-
-.stroke {
-        color: var(--lightcolor);
-        background-color: var(--lightcolor);
-        border: solid;
-        border-width: 0.1rem;
-        border-color: var(--maincolor);
-        padding: 1rem;
-        margin-inline-end: 6rem;
-        border-left: none;
-
-    }
-
-.stroke:first-child {
-    border-top: none;
-}
-
-.stroke:nth-child(2) {
-    border-bottom: none;
-} */
