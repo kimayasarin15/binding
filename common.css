@@ -10,51 +10,57 @@
     src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
     font-weight: 700;
 }
-
-
-
-/* h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    background-color: blue;
-    color: white;
-} */
+:root {
+     font-size: 100%;
+    --maincolor: #181818;
+    --lightcolor: white;
+    --article1: #ff0019;
+    --article2: #3631FB;
+    --article3: #EB51FF;
+    --padding: 1rem;
+    --lineheight: 100%
+}
 
 h1 {
     font-size: 4rem;
-    font-weight: 700;
     line-height: 90%;
     text-transform: uppercase;
-    color: black;
+    color: var(--lightcolor);
     padding-block: 3rem;
     padding-inline: 1rem;
+    margin-block-end: 6rem;
+    text-align: center;
 }
 
 body {
-     font-family: "Helvetica";
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    background-color: var(--maincolor);
 }
 
 nav {
     display: inline;
+    text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
-    padding-block: 3rem;
 }
 
 li {
-      padding-inline: 1rem;
-      color: white;
-      padding-block: 1rem;
+    color: var(--lightcolor);
+    padding: var(--padding);
 }
 
-li:first-child {
-    background-color: #3631FB;
+#first {
+    background-color: var(--article1);
+    transform: rotate(10deg);
 }
 
-li:nth-child(2) {
-    background-color: #EB51FF;
+#second {
+    background-color: var(--article2);
+    transform: rotate(-5deg);
 }
 
-li:last-child {
-    background-color: #ff0019;;
+#third {
+    background-color: var(--article3);
+    transform: rotate(5deg);
 }
