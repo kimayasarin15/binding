@@ -14,7 +14,7 @@
 :root {
     font-size: 100%;
     --maincolor: #181818;
-    --accentcolor: #3631FB;
+    --accentcolor: #ff0019;
     --lightcolor: white;
     --padding: 1rem;
     --lineheight: 100%
@@ -51,6 +51,7 @@ h2 {
     color: var(--maincolor);
     text-transform: uppercase;
     padding-block-end: calc(var(--padding)*2);
+    padding-inline: var(--padding);
 
 }
 
@@ -59,6 +60,7 @@ p {
     line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
     padding-block: var(--padding);
+    padding-inline: var(--padding);
 
 }
 
