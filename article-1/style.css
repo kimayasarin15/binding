@@ -14,7 +14,7 @@
 :root {
     font-size: 100%;
     --maincolor: #181818;
-    --accentcolor: #3631FB;
+    --accentcolor: #ff0019;
     --lightcolor: white;
     --padding: 1rem;
     --lineheight: 100%
@@ -42,15 +42,13 @@ h1 {
 }
 
 h2 {
-    border-block-end: solid;
-    border-color: var(--maincolor);
-    border-width: 0.1rem;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: calc(var(--lineheight)*0.9);
     color: var(--maincolor);
     text-transform: uppercase;
-    padding-block-end: calc(var(--padding)*2);
+    padding-block-end: calc(var(--padding)*1);
+    padding-inline: var(--padding);
 
 }
 
@@ -59,6 +57,16 @@ p {
     line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
     padding-block: var(--padding);
+    padding-inline: var(--padding);
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: calc(var(--lineheight)*1.4);
+    color: var(--maincolor);
+    padding-block: var(--padding);
+    padding-inline: var(--padding);
 
 }
 
@@ -117,7 +125,7 @@ nav ol li {
     }
 }
 
-nav ol li:first-child {
+#select {
     background-color: var(--maincolor);
 }
 
@@ -196,6 +204,10 @@ footer {
     border-color: var(--maincolor);
     border-top-width: 4rem;
     border-bottom-width: 0.1rem;
+
+    p {
+        padding-inline: 0;
+    }
 }
 
 .bottom {
@@ -211,10 +223,17 @@ svg {
     display: block;
 }
 
+/* rect {
+    fill: var(--lightcolor);
+    stroke-width: 2rem;
+    stroke: var(--accentcolor);
+} */
+
 line {
     stroke: var(--accentcolor);
     stroke-width: 3rem;
 }
+
 /* I don't think this is the right way to do it but I wanted to try bringing in some graphic shapes
 - this could potenially be used as a nav between the site - I can do this with svgs I think */
 

@@ -14,7 +14,7 @@
 :root {
     font-size: 100%;
     --maincolor: #181818;
-    --accentcolor: #3631FB;
+    --accentcolor: #EB51FF;
     --lightcolor: white;
     --padding: 1rem;
     --lineheight: 100%
@@ -59,6 +59,7 @@ p {
     line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
     padding-block: var(--padding);
+    padding-inline: var(--padding);
 
 }
 
@@ -117,7 +118,7 @@ nav ol li {
     }
 }
 
-nav ol li:first-child {
+#select {
     background-color: var(--maincolor);
 }
 
