@@ -42,21 +42,27 @@ h1 {
 }
 
 h2 {
-    border-block-end: solid;
-    border-color: var(--maincolor);
-    border-width: 0.1rem;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: calc(var(--lineheight)*0.9);
     color: var(--maincolor);
     text-transform: uppercase;
-    padding-block-end: calc(var(--padding)*2);
+    padding-block-end: calc(var(--padding)*1);
     padding-inline: var(--padding);
 
 }
 
 p {
     font-size: 1.2rem;
+    line-height: calc(var(--lineheight)*1.4);
+    color: var(--maincolor);
+    padding-block: var(--padding);
+    padding-inline: var(--padding);
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
     line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
     padding-block: var(--padding);
@@ -198,6 +204,10 @@ footer {
     border-color: var(--maincolor);
     border-top-width: 4rem;
     border-bottom-width: 0.1rem;
+    
+    p {
+        padding-inline: 0;
+    }
 }
 
 .bottom {
@@ -213,10 +223,10 @@ svg {
     display: block;
 }
 
-line {
-    stroke: var(--accentcolor);
-    stroke-width: 3rem;
+rect {
+    fill: var(--accentcolor);
 }
+
 /* I don't think this is the right way to do it but I wanted to try bringing in some graphic shapes
 - this could potenially be used as a nav between the site - I can do this with svgs I think */
 
