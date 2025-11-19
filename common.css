@@ -47,7 +47,7 @@ h2 {
     line-height: calc(var(--lineheight)*0.9);
     color: var(--maincolor);
     text-transform: uppercase;
-    padding-block-end: calc(var(--padding)*2);
+    padding-block: calc(var(--padding)*2);
     padding-inline: var(--padding);
 
     @media (width > 600px) {
@@ -64,7 +64,8 @@ p {
     padding-block: var(--padding);
 
      @media (width > 600px) {
-        max-width: 55ch;
+        font-size: 1.5rem;
+        max-width: 80ch;
     }
 
 }
