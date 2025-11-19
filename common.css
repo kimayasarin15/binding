@@ -33,9 +33,27 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 2rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: var(--maincolor);
+    padding: 1rem;
+    font-weight: 700;
+    max-width: 15ch;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: var(--maincolor);
+    padding: 1rem;
+    font-weight: 400;
+}
+
 body {
     font-family: "Poppins", sans-serif;
-    color: var(--maincolor);
 }
 
 nav {
@@ -68,6 +86,7 @@ li {
 p {
     text-align: center;
     padding-inline: var(--padding);
+    color: var(--maincolor);
 }
 
 main {
@@ -81,3 +100,4 @@ footer {
     text-transform: uppercase;
     font-weight: 700;
 }
+
