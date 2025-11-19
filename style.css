@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+     font-size: 100%;
+    --maincolor: #181818;
+    --lightcolor: white;
+    --article1: #ff0019;
+    --article2: #3631FB;
+    --article3: #EB51FF;
+    --padding: 1rem;
+    --lineheight: 100%
+}
+
+
+h2 {
+    font-size: 2rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: var(--maincolor);
+    padding: 1rem;
+    font-weight: 700;
+    max-width: 15ch;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: var(--maincolor);
+    padding: 1rem;
+    font-weight: 400;
+}
+
+
+nav ol {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 2rem;
+    justify-content: center;
+
+}
+
+li {
+    display: inline-block;
+    color: var(--lightcolor);
+    padding: var(--padding);
+}
+
+ol li {
+       font-size: 2rem;
+
+}
+.first {
+    background-color: var(--article1);
+    transform: rotate(10deg);
+}
+.second {
+    background-color: var(--article2);
+    transform: rotate(-5deg);
+}
+.third {
+    background-color: var(--article3);
+    transform: rotate(5deg);
+}
+
+p {
+    padding-inline: var(--padding);
+    color: var(--maincolor);
+}
+
+section {
+    p {
+        padding-block: calc(var(--padding)*4);
+    }
+}
+
+footer {
+    padding-block: calc(var(--padding)*2);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-block: none;
+}
+
+li {
+    p {
+        text-align: left;
+        padding-block: var(--padding);
+    }
+}
+
+ol.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+
+section ol {
+    list-style-position: inside;
+    counter-reset: index;
+
+	> li::before {
+		content: counters(index, '.') '.';
+		counter-increment: index;
+	}
+}
+
+section ol li {
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: var(--maincolor);
+}
+
+section ol li::before {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: var(--padding);
+}
+
+section ol li:first-child::before {
+        color: var(--article1);  
+}
+
+section ol li:nth-child(2)::before {
+        color: var(--article2);  
+}
+
+section ol li:last-child::before {
+        color: var(--article3);  
+}
+
+

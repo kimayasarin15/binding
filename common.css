@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: "Helvetica";
-    src: url("../fonts/Helvetica.ttf") format("truetype");
-    font-weight: 400;
-}
-@font-face {
-    font-family: "Helvetica";
-    src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
-    font-weight: 700;
-}
 :root {
      font-size: 100%;
     --maincolor: #181818;
@@ -21,132 +10,191 @@
     --lineheight: 100%
 }
 
-h1 {
-    font-size: 4rem;
-    line-height: 90%;
-    text-transform: uppercase;
-    color: var(--maincolor);
-    padding-block-start: 3rem;
-    padding-inline: 1rem;
-    margin-block-end: 6rem;
-    text-align: center;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 2rem;
-    line-height: 90%;
-    text-transform: uppercase;
-    color: var(--maincolor);
-    padding: 1rem;
-    font-weight: 700;
-    max-width: 15ch;
-}
-
-h3 {
-    font-size: 1.5rem;
-    line-height: 90%;
-    text-transform: uppercase;
-    color: var(--maincolor);
-    padding: 1rem;
-    font-weight: 400;
-}
-
+/* finally sorta understadning calc and var - tried it for padding and line height on direction 1 */
 body {
     font-family: "Poppins", sans-serif;
 }
 
-nav {
-    display: inline;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2rem;
+header {
+    padding-block-end: calc(var(--padding)*2);
+}
+    
+h1 {
+    font-size: 3.2rem;
     font-weight: 700;
+    line-height: calc(var(--lineheight)*0.9);
+    text-transform: uppercase;
+    color: var(--maincolor);
+    padding-block: calc(var(--padding)*4);
+    padding-inline: var(--padding);
+
+    @media (width > 600px) {
+        font-size: 4rem; 
+        padding-block: calc(var(--padding)*8);
+    }
+
+     @media (width > 950px) {
+        font-size: 5rem; 
+        max-width: 15ch;
+    }
 }
 
-li {
-    display: inline-block;
-    color: var(--lightcolor);
-    padding: var(--padding);
-}
+h2 {
+    border-block-end: solid;
+    border-color: var(--maincolor);
+    border-width: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: calc(var(--lineheight)*0.9);
+    color: var(--maincolor);
+    text-transform: uppercase;
+    padding-block-end: calc(var(--padding)*2);
 
-.first {
-    background-color: var(--article1);
-    transform: rotate(10deg);
-}
-.second {
-    background-color: var(--article2);
-    transform: rotate(-5deg);
-}
-.third {
-    background-color: var(--article3);
-    transform: rotate(5deg);
+    @media (width > 600px) {
+        font-size: 2rem; 
+    }
+
 }
 
 p {
-    text-align: center;
-    padding-inline: var(--padding);
+    font-size: 1.2rem;
+    line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
+    padding-block: var(--padding);
+
+     @media (width > 600px) {
+        max-width: 55ch;
+    }
+
 }
 
-section {
-    p {
-        padding-block: calc(var(--padding)*4);
+/* title highlight */
+span {
+    background-color: var(--accentcolor);
+    color: var(--lightcolor);
+    padding: calc(var(--padding)/2);
+    display: inline-block;
+}
+
+
+/* this is my footnote list */
+ul li {
+    display: block;
+    text-transform: uppercase;
+    padding: var(--padding);
+
+}
+
+/* from class how to create column */
+ul {
+    position: fixed; 
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--accentcolor);
+    color: var(--lightcolor);
+    gap: 0.5rem;
+    padding-block: var(--padding);
+    /* border-inline: solid;
+    border-color: var(--maincolor);
+    border-width: 0.1rem; */
+
+}
+
+/* my top nav bar for getting between pages */
+nav ol {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    
+    @media (width > 600px) {
+        font-size: 1.3rem; 
     }
+}
+
+nav ol li {
+    background-color: var(--accentcolor);
+    color: var(--lightcolor);
+    padding: calc(var(--padding)*0.7);
+      a {
+        text-decoration: none;
+    }
+}
+
+#select {
+    background-color: var(--maincolor);
+}
+
+
+
+
+.author {
+    border-block: solid;
+    border-color: var(--maincolor);
+    border-top-width: 0.1rem;
+    border-bottom-width: 4rem;
+    outline: var(--accentcolor);
+    outline-width: 2rem;
+ 
+    p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: var(--accentcolor);
+    padding-block: var(--padding);
+    padding-inline-start: var(--padding);
+     
+         @media (width > 600px) {
+            font-size: 1,8rem;
+        }
+    }
+
+    @media (width > 600px) {
+       padding-block: calc(var(--padding)*2); 
+    }
+}
+
+
+strong {
+    font-weight: 500;
+    background-color: var(--accentcolor);
+    color: var(--lightcolor);
+    display: inline-block;
 }
 
 footer {
     padding-block: calc(var(--padding)*2);
+    padding-inline-start: var(--padding);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: calc(var(--lineheight)*0.9);
     text-transform: uppercase;
-    font-weight: 700;
-}
-
-li {
-    p {
-        text-align: left;
-        padding-block: var(--padding);
-    }
-}
-
-ol.articles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-
-}
-
-section ol {
-    list-style-position: inside;
-    counter-reset: index;
-
-	> li::before {
-		content: counters(index, '.') '.';
-		counter-increment: index;
-	}
-}
-
-section ol li {
-    border-style: solid;
-    border-width: 0.1rem;
+    color: var(--accentcolor);
+    border-block: solid;
     border-color: var(--maincolor);
+    border-top-width: 4rem;
+    border-bottom-width: 0.1rem;
 }
 
-section ol li::before {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    padding: var(--padding);
+.bottom {
+    padding-block: var(--padding);
 }
 
-section ol li:first-child::before {
-        color: var(--article1);  
+a {
+    text-decoration: underline;
 }
 
-section ol li:nth-child(2)::before {
-        color: var(--article2);  
+svg {
+    display: block;
 }
 
-section ol li:last-child::before {
-        color: var(--article3);  
+line {
+    stroke: var(--accentcolor);
+    stroke-width: 3rem;
 }

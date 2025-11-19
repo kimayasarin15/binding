@@ -29,6 +29,11 @@ h1 {
     color: var(--maincolor);
     padding-block: calc(var(--padding)*4);
     padding-inline: var(--padding);
+
+    @media (width > 600px) {
+        font-size: 4rem;
+        
+    }
 }
 
 h2 {

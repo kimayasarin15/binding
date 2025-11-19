@@ -39,6 +39,16 @@ h1 {
     color: var(--maincolor);
     padding-block: calc(var(--padding)*4);
     padding-inline: var(--padding);
+
+    @media (width > 600px) {
+        font-size: 4rem; 
+        padding-block: calc(var(--padding)*8);
+    }
+
+     @media (width > 950px) {
+        font-size: 5rem; 
+        max-width: 15ch;
+    }
 }
 
 h2 {
@@ -52,6 +62,10 @@ h2 {
     text-transform: uppercase;
     padding-block-end: calc(var(--padding)*2);
 
+    @media (width > 600px) {
+        font-size: 2rem; 
+    }
+
 }
 
 p {
@@ -59,6 +73,10 @@ p {
     line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
     padding-block: var(--padding);
+
+     @media (width > 600px) {
+        max-width: 55ch;
+    }
 
 }
 
@@ -105,7 +123,10 @@ nav ol {
     display: flex;
     flex-direction: row;
     font-size: 1rem;
-
+    
+    @media (width > 600px) {
+        font-size: 1.3rem; 
+    }
 }
 
 nav ol li {
@@ -142,6 +163,10 @@ article ol {
 article ol li {
     padding-block: calc(var(--padding)*2);
     padding-inline: var(--padding);
+
+     @media (width > 600px) {
+        padding-block: calc(var(--padding)*4);
+    }
 }
 
 /* styling numbers */
@@ -162,7 +187,6 @@ article ol li::before {
     outline: var(--accentcolor);
     outline-width: 2rem;
  
-
     p {
     font-size: 1.5rem;
     font-weight: 500;
@@ -171,8 +195,14 @@ article ol li::before {
     color: var(--accentcolor);
     padding-block: var(--padding);
     padding-inline-start: var(--padding);
+     
+         @media (width > 600px) {
+            font-size: 1,8rem;
+        }
+    }
 
-
+    @media (width > 600px) {
+       padding-block: calc(var(--padding)*2); 
     }
 }
 
