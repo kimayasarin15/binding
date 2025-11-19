@@ -11,7 +11,9 @@
     --lineheight: 100%
 }
 
-
+h1 {
+    font-size: 5rem;
+}
 h2 {
   border-style: none;
 }
@@ -28,7 +30,8 @@ h3 {
 
 
 nav ol {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
     text-transform: uppercase;
     font-weight: 700;
     padding: 2rem;
@@ -37,13 +40,13 @@ nav ol {
 }
 
 li {
-    display: inline-block;
+    /* display: inline-block; */
     color: var(--lightcolor);
     padding: var(--padding);
 }
 
 ol li {
-       font-size: 2rem;
+       font-size: 3rem;
 
 }
 .first {
@@ -84,13 +87,13 @@ li {
     }
 }
 
-ol.articles {
+main ol {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 0.5rem;
-
 }
+
 
 section ol {
     list-style-position: inside;
@@ -127,4 +130,40 @@ section ol li:last-child::before {
         color: var(--article3);  
 }
 
+line {
+    position: absolute;
+    z-index: -1;
+}
 
+.line1 {
+    stroke: var(--article1);
+    stroke-width: 5rem;
+    z-index: -1;
+}
+
+.line2 {
+    stroke: var(--article2);
+    stroke-width: 5rem;
+}
+
+.line3 {
+    stroke: var(--article3);
+    stroke-width: 5rem;
+}
+
+/* tried color in the h1 - not sure yet */
+/* span:first-child {
+    color: var(--article1);
+}
+
+span:nth-child(2) {
+    color: var(--article2);
+}
+
+span:last-child {
+    color: var(--article3);
+} */
+
+span {
+    color: var(--maincolor);
+}
