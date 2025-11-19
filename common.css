@@ -56,7 +56,7 @@ h2 {
 
 }
 
-main p {
+p {
     font-size: 1.2rem;
     line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
