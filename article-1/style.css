@@ -10,51 +10,6 @@
     --lineheight: 100%
 }
 
-/* finally sorta understadning calc and var - tried it for padding and line height on direction 1 */
-body {
-    font-family: "Poppins", sans-serif;
-    /* font-family: "Helvetica"; trying different typefaces - deciding between the two  */
-    /* padding-inline-end: calc(var(--padding)*3); */
-    
-}
-header {
-    padding-block-end: calc(var(--padding)*2);
-}
-    
-h1 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: calc(var(--lineheight)*0.9);
-    text-transform: uppercase;
-    color: var(--maincolor);
-    padding-block: calc(var(--padding)*4);
-    padding-inline: var(--padding);
-
-    @media (width > 600px) {
-        font-size: 4rem;
-        
-    }
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: calc(var(--lineheight)*0.9);
-    color: var(--maincolor);
-    text-transform: uppercase;
-    padding-block-end: calc(var(--padding)*1);
-    padding-inline: var(--padding);
-
-}
-
-p {
-    font-size: 1.2rem;
-    line-height: calc(var(--lineheight)*1.4);
-    color: var(--maincolor);
-    padding-block: var(--padding);
-    padding-inline: var(--padding);
-}
-
 blockquote {
     font-size: 1.2rem;
     font-style: italic;
@@ -62,170 +17,23 @@ blockquote {
     color: var(--maincolor);
     padding-block: var(--padding);
     padding-inline: var(--padding);
+} 
 
-}
-
-/* title highlight */
-span {
-    background-color: var(--accentcolor);
-    color: var(--lightcolor);
-    padding: calc(var(--padding)/2);
-    display: inline-block;
-}
-
-
-/* this is my footnote list */
-ul li {
-    display: block;
-    text-transform: uppercase;
-    padding: var(--padding);
-
-}
-
-/* from class how to create column */
-ul {
-    position: fixed; 
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: var(--accentcolor);
-    color: var(--lightcolor);
-    gap: 0.5rem;
-    padding-block: var(--padding);
-    /* border-inline: solid;
-    border-color: var(--maincolor);
-    border-width: 0.1rem; */
-
-}
-
-/* my top nav bar for getting between pages */
-nav ol {
-    display: flex;
-    flex-direction: row;
-    font-size: 1rem;
-
-}
-
-nav ol li {
-    background-color: var(--accentcolor);
-    color: var(--lightcolor);
-    padding: calc(var(--padding)*0.7);
-      a {
-        text-decoration: none;
-    }
-}
-
-#select {
-    background-color: var(--maincolor);
-}
-
-
-
-/* ordered list of footnotes */
-
-article ol {
-    /* list-style-type: decimal; */
-    /* from MDN how to bring the list inside */
-    list-style-position: inside;
-    /* padding-block: 3rem; */
-    /* from slack how to add numbers with ::before */
-    counter-reset: index;
-
-	> li::before {
-		content: counters(index, '.') '.';
-		counter-increment: index;
-	}
-}
-
-article ol li {
-    padding-block: calc(var(--padding)*2);
-    padding-inline: var(--padding);
-}
-
-/* styling numbers */
-article ol li::before {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    color: var(--accentcolor);  
-}
-
-/* section on the author and orginal article */
-
-.author {
-    border-block: solid;
-    border-color: var(--maincolor);
-    border-top-width: 0.1rem;
-    border-bottom-width: 4rem;
-    outline: var(--accentcolor);
-    outline-width: 2rem;
- 
-
-    p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 100%;
-    text-transform: uppercase;
-    color: var(--accentcolor);
-    padding-block: var(--padding);
-    padding-inline-start: var(--padding);
-
-
-    }
-}
-
-
-strong {
-    font-weight: 500;
-    background-color: var(--accentcolor);
-    color: var(--lightcolor);
-    display: inline-block;
+h2 {
+    border-style: none;
 }
 
 footer {
-    padding-block: calc(var(--padding)*2);
-    padding-inline-start: var(--padding);
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: calc(var(--lineheight)*0.9);
-    text-transform: uppercase;
-    color: var(--accentcolor);
-    border-block: solid;
-    border-color: var(--maincolor);
-    border-top-width: 4rem;
-    border-bottom-width: 0.1rem;
-
     p {
-        padding-inline: 0;
+        padding-block: 1rem;
+        color: var(--maincolor);
     }
 }
 
-.bottom {
-    padding-block: var(--padding);
+.author {
+    p {
+        line-height: var(--lineheight);
+    }
 }
 
-a {
-    text-decoration: underline;
-}
-
-/* tried it with svgs */
-svg {
-    display: block;
-}
-
-/* rect {
-    fill: var(--lightcolor);
-    stroke-width: 2rem;
-    stroke: var(--accentcolor);
-} */
-
-line {
-    stroke: var(--accentcolor);
-    stroke-width: 3rem;
-}
 

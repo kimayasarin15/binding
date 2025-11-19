@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 :root {
      font-size: 100%;
     --maincolor: #181818;
     --lightcolor: white;
-    --article1: #ff0019;
-    --article2: #3631FB;
-    --article3: #EB51FF;
     --padding: 1rem;
     --lineheight: 100%
 }
@@ -49,6 +48,7 @@ h2 {
     color: var(--maincolor);
     text-transform: uppercase;
     padding-block-end: calc(var(--padding)*2);
+    padding: var(--padding);
 
     @media (width > 600px) {
         font-size: 2rem; 
@@ -56,11 +56,11 @@ h2 {
 
 }
 
-p {
+main p {
     font-size: 1.2rem;
     line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
-    padding-block: var(--padding);
+    padding: var(--padding);
 
      @media (width > 600px) {
         max-width: 55ch;
@@ -78,33 +78,6 @@ span {
 
 
 /* this is my footnote list */
-ul li {
-    display: block;
-    text-transform: uppercase;
-    padding: var(--padding);
-
-}
-
-/* from class how to create column */
-ul {
-    position: fixed; 
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: var(--accentcolor);
-    color: var(--lightcolor);
-    gap: 0.5rem;
-    padding-block: var(--padding);
-    /* border-inline: solid;
-    border-color: var(--maincolor);
-    border-width: 0.1rem; */
-
-}
 
 /* my top nav bar for getting between pages */
 nav ol {
