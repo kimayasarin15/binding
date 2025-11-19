@@ -14,8 +14,11 @@
 h1 {
     font-size: 5rem;
 }
+
 h2 {
-  border-style: none;
+    font-size: 2.5rem;
+    border-style: none;
+    color: var(--lightcolor);
 }
 
 h3 {
@@ -26,6 +29,7 @@ h3 {
     padding-inline: 1rem;
     padding-block-end: 1rem;
     font-weight: 400;
+    color: var(--lightcolor);
 }
 
 
@@ -36,6 +40,10 @@ nav ol {
     font-weight: 700;
     padding: 2rem;
     justify-content: center;
+
+    :hover {
+        scale: 110%;
+    }
 
 }
 
@@ -84,18 +92,18 @@ li {
     p {
         text-align: left;
         padding-block: var(--padding);
+        color: var(--lightcolor);
     }
 }
 
-main ol {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-
 section ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-block: 3rem;
+
     list-style-position: inside;
     counter-reset: index;
 
@@ -103,31 +111,40 @@ section ol {
 		content: counters(index, '.') '.';
 		counter-increment: index;
 	}
+
+    :hover {
+        scale: 110%;
+    }
 }
 
 section ol li {
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: var(--maincolor);
+    flex-grow: 1;
+
+    @media (width > 1000px) {
+        max-width: 400px;
+        
+    }
 }
+
 
 section ol li::before {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2rem;
     padding: var(--padding);
+    color: var(--lightcolor);
 }
 
-section ol li:first-child::before {
-        color: var(--article1);  
+section ol li:first-child {
+        background-color: var(--article1);  
 }
 
-section ol li:nth-child(2)::before {
-        color: var(--article2);  
+section ol li:nth-child(2) {
+        background-color: var(--article2);  
 }
 
-section ol li:last-child::before {
-        color: var(--article3);  
+section ol li:last-child {
+       background-color: var(--article3);  
 }
 
 line {
