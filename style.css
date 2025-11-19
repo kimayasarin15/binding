@@ -13,13 +13,7 @@
 
 
 h2 {
-    font-size: 2rem;
-    line-height: 90%;
-    text-transform: uppercase;
-    color: var(--maincolor);
-    padding: 1rem;
-    font-weight: 700;
-    max-width: 15ch;
+  border-style: none;
 }
 
 h3 {
@@ -27,7 +21,8 @@ h3 {
     line-height: 90%;
     text-transform: uppercase;
     color: var(--maincolor);
-    padding: 1rem;
+    padding-inline: 1rem;
+    padding-block-end: 1rem;
     font-weight: 400;
 }
 

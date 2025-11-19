@@ -90,6 +90,9 @@ nav ol {
     @media (width > 600px) {
         font-size: 1.3rem; 
     }
+    @media (width > 950px) {
+        font-size: 1.5rem; 
+    }
 }
 
 nav ol li {
@@ -98,6 +101,10 @@ nav ol li {
     padding: calc(var(--padding)*0.7);
       a {
         text-decoration: none;
+    }
+
+     @media (width > 950px) {
+         padding-inline: calc(var(--padding)*1.2);
     }
 }
 

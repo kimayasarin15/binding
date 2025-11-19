@@ -21,12 +21,14 @@ main p {
 
 h2 {
     padding-inline: 0;
+    margin-block-end: 1rem;
 }
 
 footer {
     p {
         padding-block: 1rem;
         color: var(--maincolor);
+        padding-inline: 0;
     }
 }
 
@@ -55,6 +57,7 @@ ul {
     /* border-inline: solid;
     border-color: var(--maincolor);
     border-width: 0.1rem; */
+
 
 }
 

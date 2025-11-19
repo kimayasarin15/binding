@@ -27,6 +27,7 @@ footer {
     p {
         padding-block: 1rem;
         color: var(--maincolor);
+        padding-inline: 0;
     }
 }
 
