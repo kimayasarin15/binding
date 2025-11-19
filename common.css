@@ -89,15 +89,64 @@ p {
     color: var(--maincolor);
 }
 
-main {
+section {
     p {
         padding-block: calc(var(--padding)*4);
     }
 }
 
 footer {
-    padding-block-end: calc(var(--padding)*2);
+    padding-block: calc(var(--padding)*2);
     text-transform: uppercase;
     font-weight: 700;
 }
 
+li {
+    p {
+        text-align: left;
+        padding-block: var(--padding);
+    }
+}
+
+ol.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+
+section ol {
+    list-style-position: inside;
+    counter-reset: index;
+
+	> li::before {
+		content: counters(index, '.') '.';
+		counter-increment: index;
+	}
+}
+
+section ol li {
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: var(--maincolor);
+}
+
+section ol li::before {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: var(--padding);
+}
+
+section ol li:first-child::before {
+        color: var(--article1);  
+}
+
+section ol li:nth-child(2)::before {
+        color: var(--article2);  
+}
+
+section ol li:last-child::before {
+        color: var(--article3);  
+}
