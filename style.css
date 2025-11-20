@@ -28,9 +28,10 @@ h2 {
     border-style: none;
     color: var(--lightcolor);
     
-     @media (width > 950px) {
+    @media (width > 950px) {
         padding-inline: var(--padding);
     }
+    
 }
 
 h3 {
