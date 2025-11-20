@@ -4,7 +4,7 @@
      font-size: 100%;
     --maincolor: #181818;
     --lightcolor: white;
-    --article1: #ff0019;
+    --article1: #FF2F00;
     --article2: #3631FB;
     --article3: #EB51FF;
     --padding: 1rem;
@@ -14,9 +14,11 @@
 h1 {
     font-size: 5rem;
     line-height: calc(var(--lineheight)*0.8);
-     @media (width > 900px) {
-    padding-inline: calc(var(--padding)*6);
-    max-width: 20sch;
+    
+    @media (width > 900px) {
+        padding-inline: calc(var(--padding)*6);
+        max-width: 20sch;
+        font-size: 8rem;
     }
 }
 
@@ -42,7 +44,7 @@ nav ol {
     display: flex;
     flex-wrap: wrap;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     padding: 2rem;
     justify-content: center;
     :hover {
