@@ -17,6 +17,15 @@ blockquote {
     color: var(--maincolor);
     padding-block: var(--padding);
     padding-inline: var(--padding);
+
+    @media (width > 600px) {
+        font-size: 1.5rem;
+        max-width: 80ch;
+    }
+    
+    @media (width > 950px) {
+        padding-inline: calc(var(--padding)*4);
+    }
 } 
 
 h2 {

@@ -16,9 +16,15 @@ body {
 }
 
 main p {
-    padding: 0;
+    padding-inline: 0;
 }
 
+h1 {
+    @media (width>950px) {
+        max-width: 20ch;
+    }
+
+}
 h2 {
     padding-inline: 0;
     margin-block-end: 1rem;
@@ -81,10 +87,16 @@ article ol {
 
 article ol li {
     padding-block: calc(var(--padding)*2);
+    padding-block-end: calc(var(--padding)*4);
     padding-inline: var(--padding);
 
-     @media (width > 600px) {
+     /* @media (width > 600px) {
         padding-block: calc(var(--padding)*4);
+    } */
+    @media (width > 950px) {
+        padding-inline: calc(var(--padding)*4);
+        max-width: 100ch;
+        
     }
 }
 

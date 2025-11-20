@@ -17,6 +17,8 @@ body {
 header {
     padding-block-end: calc(var(--padding)*2);
 }
+
+
 /* my h1 */
 h1 {
     font-size: 3.2rem;
@@ -32,9 +34,11 @@ h1 {
         padding-block: calc(var(--padding)*8);
     }
 
-     @media (width > 950px) {
-        font-size: 5rem; 
-        /* max-width: 15ch; */
+    @media (width > 950px) {
+        font-size: 6rem; 
+        padding-inline: calc(var(--padding)*4);
+        max-width: 15ch;
+        
     }
 }
 
@@ -53,6 +57,11 @@ h2 {
     @media (width > 600px) {
         font-size: 2rem; 
     }
+    @media (width > 950px) {
+        padding-inline: calc(var(--padding)*4);
+        max-width: 75ch; 
+        /* need to fix h2 max width */
+    }
 
 }
 
@@ -63,9 +72,14 @@ p {
     padding-inline: var(--padding);
     padding-block: var(--padding);
 
-     @media (width > 600px) {
+    @media (width > 600px) {
         font-size: 1.5rem;
         max-width: 80ch;
+    }
+    @media (width > 950px) {
+        padding-inline: calc(var(--padding)*4);
+        max-width: 75ch;
+        
     }
 
 }
@@ -91,6 +105,12 @@ nav ol {
     @media (width > 950px) {
         font-size: 1.5rem; 
     }
+}
+
+/* making nav sticky */
+.sticky {
+    position: sticky;
+    top:0;
 }
 
 nav ol li {
@@ -139,6 +159,9 @@ nav ol li {
     @media (width > 600px) {
        padding-block: calc(var(--padding)*2); 
     }
+    @media (width > 950px) {
+        padding-inline: calc(var(--padding)*4);
+    }
 }
 
 /* my in text highlights */
@@ -162,6 +185,11 @@ footer {
     border-color: var(--maincolor);
     border-top-width: 4rem;
     border-bottom-width: 0.1rem;
+    
+    @media (width > 950px) {
+        padding-inline: calc(var(--padding)*4);
+    }
+    
 }
 
 .bottom {
