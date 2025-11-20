@@ -217,3 +217,7 @@ img {
     }
 }
 
+/* targeting last h2 in list so they are all on two lines each */
+.articles li:last-child h2 {
+    max-width: 10ch;
+}
