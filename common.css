@@ -98,6 +98,7 @@ nav ol {
     display: flex;
     flex-direction: row;
     font-size: 1rem;
+    text-transform: uppercase;
     
     @media (width > 600px) {
         font-size: 1.3rem; 
@@ -122,7 +123,7 @@ nav ol li {
     }
 
      @media (width > 950px) {
-         padding-inline: calc(var(--padding)*1.2);
+         padding-inline: calc(var(--padding)*3);
     }
 }
 
