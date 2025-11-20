@@ -14,11 +14,12 @@
 h1 {
     font-size: 5rem;
     line-height: calc(var(--lineheight)*0.8);
-    
-    @media (width > 900px) {
+
+    @media (width > 950px) {
         padding-inline: calc(var(--padding)*6);
         max-width: 20sch;
         font-size: 8rem;
+        padding-block-start: calc(var(--padding)*10);
     }
 }
 
@@ -199,3 +200,20 @@ span:last-child {
 span {
     color: var(--maincolor);
 }
+
+
+/* added an image I wanted it to rotate as the screen changes so it fits the width better */
+img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    rotate: 90deg;
+    scale: 150%;
+    /* filter: blur(5px); */
+    @media (width > 950px) {
+        rotate: 0deg;
+        scale: 100%;
+
+    }
+}
+
