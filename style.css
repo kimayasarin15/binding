@@ -27,6 +27,9 @@ h2 {
     font-size: 2.5rem;
     border-style: none;
     color: var(--lightcolor);
+     @media (width > 950px) {
+        padding-inline: var(--padding);
+    }
 }
 
 h3 {
@@ -96,10 +99,18 @@ p {
 
 
 footer {
-    padding-block: calc(var(--padding)*2);
+    /* tried flex for footer but not sure if I like it */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    padding-block: calc(var(--padding)*6);
     text-transform: uppercase;
     font-weight: 700;
     border-block: none;
+
+    p {
+        padding-block: calc(var(--padding)*0.5);
+    }
 }
 
 li {
@@ -126,15 +137,20 @@ section ol {
 		content: counters(index, '.') '.';
 		counter-increment: index;
 	}
- 
-    :hover {
-        scale: 105%;
-    }
+
      /* this makes it become a row */
     @media (width > 950px) {
         flex-direction: row;
         flex-wrap: nowrap;
         
+    }
+}
+
+/* sometimes this hovers the whole block - sometimes it hovers each element need to fix */
+/* need to add links too */
+.articles {
+     :hover {
+        scale: 105%;
     }
 }
 
@@ -219,5 +235,5 @@ img {
 
 /* targeting last h2 in list so they are all on two lines each */
 .articles li:last-child h2 {
-    max-width: 10ch;
+    max-width: 12ch;
 }
