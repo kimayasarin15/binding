@@ -27,6 +27,7 @@ h2 {
     font-size: 2.5rem;
     border-style: none;
     color: var(--lightcolor);
+    
      @media (width > 950px) {
         padding-inline: var(--padding);
     }
