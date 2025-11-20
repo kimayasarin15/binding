@@ -13,6 +13,11 @@
 
 h1 {
     font-size: 5rem;
+    line-height: calc(var(--lineheight)*0.8);
+     @media (width > 900px) {
+    padding-inline: calc(var(--padding)*6);
+    max-width: 20sch;
+    }
 }
 
 h2 {
@@ -40,7 +45,6 @@ nav ol {
     font-weight: 700;
     padding: 2rem;
     justify-content: center;
-
     :hover {
         scale: 110%;
     }
@@ -54,9 +58,12 @@ li {
 }
 
 ol li {
-       font-size: 3rem;
-
+    font-size: 3rem;
+    @media (width > 900px) {
+    font-size: 5rem;
+    }
 }
+
 .first {
     background-color: var(--article1);
     transform: rotate(10deg);
@@ -75,11 +82,15 @@ p {
     color: var(--maincolor);
 }
 
-section {
-    p {
-        padding-block: calc(var(--padding)*4);
-    }
+.together {
+     padding-block: calc(var(--padding)*4);
+
+     @media (width > 950px) {
+        padding: calc(var(--padding)*6);
+     }
+
 }
+
 
 footer {
     padding-block: calc(var(--padding)*2);
@@ -93,14 +104,15 @@ li {
         text-align: left;
         padding-block: var(--padding);
         color: var(--lightcolor);
+        font-size: 1.2rem;
     }
 }
 
 section ol {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
+    /* gap: 1rem; */
     justify-content: center;
     padding-block: 3rem;
 
@@ -111,19 +123,20 @@ section ol {
 		content: counters(index, '.') '.';
 		counter-increment: index;
 	}
-
+ 
     :hover {
-        scale: 110%;
+        scale: 105%;
+    }
+     /* this makes it become a row */
+    @media (width > 950px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
     }
 }
 
 section ol li {
     flex-grow: 1;
-
-    @media (width > 1000px) {
-        max-width: 400px;
-        
-    }
 }
 
 

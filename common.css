@@ -17,7 +17,7 @@ body {
 header {
     padding-block-end: calc(var(--padding)*2);
 }
-    
+/* my h1 */
 h1 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -34,7 +34,7 @@ h1 {
 
      @media (width > 950px) {
         font-size: 5rem; 
-        max-width: 15ch;
+        /* max-width: 15ch; */
     }
 }
 
@@ -79,8 +79,6 @@ span {
 }
 
 
-/* this is my footnote list */
-
 /* my top nav bar for getting between pages */
 nav ol {
     display: flex;
@@ -108,13 +106,14 @@ nav ol li {
     }
 }
 
+/* to highlight the page it's on */
 #select {
     background-color: var(--maincolor);
 }
 
 
 
-
+/* author information */
 .author {
     border-block: solid;
     border-color: var(--maincolor);
@@ -142,7 +141,7 @@ nav ol li {
     }
 }
 
-
+/* my in text highlights */
 strong {
     font-weight: 500;
     background-color: var(--accentcolor);
@@ -150,6 +149,7 @@ strong {
     display: inline-block;
 }
 
+/* footer  */
 footer {
     padding-block: calc(var(--padding)*2);
     padding-inline-start: var(--padding);
@@ -172,6 +172,7 @@ a {
     text-decoration: underline;
 }
 
+/* svg styling */
 svg {
     display: block;
 }
