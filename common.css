@@ -212,3 +212,23 @@ line {
     stroke: var(--accentcolor);
     stroke-width: 3rem;
 }
+
+/* potentially make the footer flex didn't have time to finish it will come back to it */
+/* maybe a bottom flex bar  */
+/* .bottomflex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block-start: calc(var(--padding)*3);
+    background-color: var(--maincolor);
+   
+    p {
+        color: var(--lightcolor);
+    }
+    @media  (width > 950px) {
+        flex-direction: row;
+        
+    }
+} */
