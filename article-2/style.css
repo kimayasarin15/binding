@@ -64,6 +64,12 @@ ul {
     border-color: var(--maincolor);
     border-width: 0.1rem; */
 
+    @media (width > 1000px) {
+        gap: 0.8rem;
+        font-size: 1.5rem;
+        padding-inline: calc(var(--padding)*1.3);
+    }
+
 
 }
 

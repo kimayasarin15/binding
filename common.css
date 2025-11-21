@@ -59,8 +59,7 @@ h2 {
     }
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*4);
-        max-width: 75ch; 
-        /* need to fix h2 max width */
+        max-width: 50ch; 
     }
 
 }
@@ -152,8 +151,11 @@ nav ol li {
     padding-block: var(--padding);
     padding-inline-start: var(--padding);
      
-         @media (width > 600px) {
+        @media (width > 600px) {
             font-size: 1,8rem;
+        }
+        @media (width > 950px) {
+            font-size: 2rem;
         }
     }
 
@@ -170,7 +172,7 @@ strong {
     font-weight: 500;
     background-color: var(--accentcolor);
     color: var(--lightcolor);
-    display: inline-block;
+    display: inline;
 }
 
 /* footer  */
