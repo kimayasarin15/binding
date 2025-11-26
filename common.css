@@ -32,6 +32,7 @@ h1 {
     @media (width > 600px) {
         font-size: 4rem; 
         padding-block: calc(var(--padding)*8);
+        padding-inline: calc(var(--padding)*2);
     }
 
     @media (width > 950px) {
@@ -56,6 +57,7 @@ h2 {
 
     @media (width > 600px) {
         font-size: 2rem; 
+        padding-inline: calc(var(--padding)*2);
     }
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*4);
@@ -65,19 +67,19 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: calc(var(--lineheight)*1.4);
     color: var(--maincolor);
     padding-inline: var(--padding);
     padding-block: var(--padding);
 
     @media (width > 600px) {
-        font-size: 1.5rem;
-        max-width: 80ch;
+        font-size: 1.2rem;
+        padding-inline: calc(var(--padding)*2);
+        max-width: 75ch;
     }
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*4);
-        max-width: 75ch;
         
     }
 
@@ -152,6 +154,7 @@ nav ol li {
      
         @media (width > 600px) {
             font-size: 1,8rem;
+
         }
         @media (width > 950px) {
             font-size: 2rem;
@@ -159,19 +162,25 @@ nav ol li {
     }
 
     @media (width > 600px) {
-       padding-block: calc(var(--padding)*2); 
+       padding: calc(var(--padding)*2); 
     }
     @media (width > 950px) {
-        padding-inline: calc(var(--padding)*4);
+        padding: calc(var(--padding)*4);
     }
 }
 
 /* my in text highlights */
 strong {
     font-weight: 500;
-    background-color: var(--accentcolor);
-    color: var(--lightcolor);
+    /* background-color: var(--accentcolor);
+    color: var(--lightcolor); */
     display: inline;
+    /* Looked at Evgenii and Zarah's project 2 for underlining */
+    text-decoration: underline;
+    text-decoration-color: var(--accentcolor);
+    text-decoration-thickness: 0.3rem;
+    text-underline-offset: -0.12rem;
+    text-decoration-skip-ink: none;
 }
 
 /* footer  */
@@ -187,6 +196,10 @@ footer {
     border-color: var(--maincolor);
     border-top-width: 4rem;
     border-bottom-width: 0.1rem;
+
+     @media (width > 600px) {
+        padding-inline: calc(var(--padding)*2);
+    }
     
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*4);
@@ -211,6 +224,25 @@ line {
     stroke: var(--accentcolor);
     stroke-width: 3rem;
 }
+
+blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: calc(var(--lineheight)*1.4);
+    color: var(--maincolor);
+    padding-block: var(--padding);
+    padding-inline: var(--padding);
+
+    @media (width > 600px) {
+        font-size: 1.2rem;
+        max-width: 75ch;
+         padding-inline: calc(var(--padding)*2);
+    }
+    
+    @media (width > 950px) {
+        padding-inline: calc(var(--padding)*4);
+    }
+} 
 
 /* potentially make the footer flex didn't have time to finish it will come back to it */
 /* maybe a bottom flex bar  */
