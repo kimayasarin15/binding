@@ -28,7 +28,7 @@ h2 {
     border-style: none;
     color: var(--lightcolor);
     
-    @media (width > 950px) {
+    @media (width > 600px) {
         padding-inline: var(--padding);
     }
     
@@ -133,6 +133,7 @@ section ol {
 
 section ol li {
     flex-grow: 1;
+    padding: 2rem;
 }
 
 
@@ -213,4 +214,8 @@ img {
 /* targeting last h2 in list so they are all on two lines each */
 .articles li:last-child h2 {
     max-width: 12ch;
+}
+
+a { 
+    text-decoration: none;
 }

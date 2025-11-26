@@ -97,7 +97,7 @@ article ol li {
     padding-inline: var(--padding);
 
      @media (width > 600px) {
-        padding-inline: calc(var(--padding)*2);
+        padding-block: calc(var(--padding)*2);
     }
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*4);
