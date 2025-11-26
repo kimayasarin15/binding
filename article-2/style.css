@@ -11,7 +11,7 @@
 
 
 body {
-    padding-inline-end: calc(var(--padding)*3);
+    /* padding-inline-end: calc(var(--padding)*3); */
     
 }
 

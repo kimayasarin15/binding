@@ -98,7 +98,6 @@ nav ol {
     flex-direction: row;
     font-size: 1rem;
     text-transform: uppercase;
-    
     @media (width > 600px) {
         font-size: 1.3rem; 
     }

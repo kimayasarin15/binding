@@ -46,43 +46,14 @@ h3 {
 }
 
 
-nav ol {
-    display: flex;
-    flex-wrap: wrap;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 2rem;
-    justify-content: center;
-    :hover {
-        scale: 110%;
-    }
-
-}
-
-li {
-    /* display: inline-block; */
-    color: var(--lightcolor);
-    padding: var(--padding);
-}
-
-ol li {
-    font-size: 3rem;
-    @media (width > 900px) {
-    font-size: 5rem;
-    }
-}
-
 .first {
     background-color: var(--article1);
-    transform: rotate(10deg);
 }
 .second {
     background-color: var(--article2);
-    transform: rotate(-5deg);
 }
 .third {
     background-color: var(--article3);
-    transform: rotate(5deg);
 }
 
 p {
@@ -151,9 +122,13 @@ section ol {
 /* sometimes this hovers the whole block - sometimes it hovers each element need to fix */
 /* need to add links too */
 .articles {
-     :hover {
+
+    @media (width > 950px) {
+        :hover {
         scale: 105%;
+        }
     }
+
 }
 
 section ol li {
