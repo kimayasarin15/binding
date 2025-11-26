@@ -219,3 +219,10 @@ img {
 a { 
     text-decoration: none;
 }
+
+svg {
+    position: absolute;
+    z-index: -1;
+    scale: 80%
+}
+
