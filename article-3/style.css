@@ -26,3 +26,11 @@ footer {
         line-height: var(--lineheight);
     }
 }
+
+
+
+h1 {
+    @media (width > 950px) {
+        max-width: 15ch;
+    }
+}

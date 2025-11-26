@@ -17,7 +17,7 @@ h1 {
 
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*6);
-        max-width: 20sch;
+        max-width: 15ch;
         font-size: 8rem;
         padding-block-start: calc(var(--padding)*10);
     }
