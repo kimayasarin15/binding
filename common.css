@@ -119,7 +119,7 @@ nav ol {
 nav ol li {
     background-color: var(--accentcolor);
     color: var(--lightcolor);
-    padding: calc(var(--padding)*0.7);
+    padding: calc(var(--padding)*1);
     width: 100vh;
     text-align: center;
       a {
