@@ -74,8 +74,10 @@ p {
 footer {
     /* tried flex for footer but not sure if I like it */
     /* display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; */
+    align-items: left;
+    gap: 2rem; */
     padding-block: calc(var(--padding)*6);
     text-transform: uppercase;
     font-weight: 700;
@@ -83,8 +85,13 @@ footer {
 
     p {
         padding-block: calc(var(--padding)*0.5);
+        font-size: 1.5rem;
     }
 }
+
+/* img {
+    width:20%;
+} */
 
 li {
     p {
@@ -197,19 +204,19 @@ span {
 
 
 /* added an image I wanted it to rotate as the screen changes so it fits the width better */
-img {
+/* img {
     position: absolute;
     z-index: -1;
     width: 100%;
     rotate: 90deg;
     scale: 150%;
     /* filter: blur(5px); */
-    @media (width > 950px) {
+    /* @media (width > 950px) {
         rotate: 0deg;
         scale: 100%;
 
     }
-}
+} */ 
 
 /* targeting last h2 in list so they are all on two lines each */
 .articles li:last-child h2 {
@@ -220,9 +227,26 @@ a {
     text-decoration: none;
 }
 
-svg {
+/* svg {
     position: absolute;
     z-index: -1;
-    scale: 80%
+    scale: 50%;
+} */
+
+.svg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    rotate: 90deg;
+    scale: 150%;
+    margin-block-end: 3rem;
+
+    @media (width > 500px) {
+        scale: 100%;
+    }
+    @media (width > 720px) {
+        rotate: 0deg;
+        scale: 100%;
+    }
 }
 
