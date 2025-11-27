@@ -21,6 +21,9 @@ h1 {
         font-size: 8rem;
         padding-block-start: calc(var(--padding)*10);
     }
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*10);  
+    }
 }
 
 h2 {
@@ -32,6 +35,10 @@ h2 {
         padding-inline: var(--padding);
     }
     
+    @media (width > 1200px) {
+        margin-inline-start: 0
+    }
+
 }
 
 h3 {
@@ -59,25 +66,25 @@ h3 {
 p {
     padding-inline: var(--padding);
     color: var(--maincolor);
+    @media (width > 1200px) {
+        margin-inline-start: 0
+    }
 }
 
 .together {
      padding-block: calc(var(--padding)*4);
 
-     @media (width > 950px) {
+    @media (width > 950px) {
         padding: calc(var(--padding)*6);
-     }
+    }
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*10);  
+    }
 
 }
 
 
 footer {
-    /* tried flex for footer but not sure if I like it */
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: left;
-    gap: 2rem; */
     padding-block: calc(var(--padding)*6);
     text-transform: uppercase;
     font-weight: 700;
