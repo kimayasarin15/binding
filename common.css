@@ -38,8 +38,10 @@ h1 {
     @media (width > 950px) {
         font-size: 6rem; 
         padding-inline: calc(var(--padding)*4);
-        max-width: 18ch;
-        
+        max-width: 18ch;    
+    }
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*20);  
     }
 }
 
@@ -63,6 +65,9 @@ h2 {
         padding-inline: calc(var(--padding)*4);
         max-width: 50ch; 
     }
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*20);  
+    }
 
 }
 
@@ -79,8 +84,11 @@ p {
         max-width: 75ch;
     }
     @media (width > 950px) {
-        padding-inline: calc(var(--padding)*4);
-        
+        padding-inline: calc(var(--padding)*4);   
+    }
+
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*20);  
     }
 
 }
@@ -242,11 +250,13 @@ blockquote {
     @media (width > 600px) {
         font-size: 1.2rem;
         max-width: 75ch;
-         padding-inline: calc(var(--padding)*2);
+        padding-inline: calc(var(--padding)*2);
     }
-    
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*4);
+    }
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*20);  
     }
 } 
 

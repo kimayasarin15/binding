@@ -96,13 +96,17 @@ article ol li {
     padding-block-end: calc(var(--padding)*4);
     padding-inline: var(--padding);
 
-     @media (width > 600px) {
+    @media (width > 600px) {
         padding-block: calc(var(--padding)*2);
     }
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*4);
-        max-width: 100ch;
-        
+    }
+    h2 {
+        max-width: 40ch;
+    }
+    p {
+        max-width: 65ch;
     }
 }
 
@@ -112,5 +116,10 @@ article ol li::before {
     font-weight: 700;
     font-size: 2rem;
     color: var(--accentcolor);  
+
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*20);  
+    }
 }
+
 
