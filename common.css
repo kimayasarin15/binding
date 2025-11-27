@@ -78,6 +78,7 @@ p {
     color: var(--maincolor);
     padding-inline: var(--padding);
     padding-block: var(--padding);
+    /* text-wrap: balance; */
 
     @media (width > 600px) {
         font-size: 1.2rem;
@@ -122,8 +123,15 @@ nav ol {
 /* making nav sticky */
 .sticky {
     position: sticky;
-    top:0;
-    
+    top:0;    
+}
+
+/* .sticky li {
+    transition: transform 0.3s ease;
+} */
+
+.sticky li:hover {
+    transform: translateY(20px);
 }
 
 nav ol li {
@@ -285,3 +293,8 @@ blockquote {
         
     }
 } */
+
+
+main {
+    padding-block-end: calc(var(--padding)*6);
+}

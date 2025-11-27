@@ -89,10 +89,15 @@ footer {
     text-transform: uppercase;
     font-weight: 700;
     border-block: none;
-
     p {
         padding-block: calc(var(--padding)*0.5);
         font-size: 1.5rem;
+    }
+
+    @media (width>950px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
