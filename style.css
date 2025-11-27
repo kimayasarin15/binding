@@ -141,13 +141,11 @@ section ol {
 /* sometimes this hovers the whole block - sometimes it hovers each element need to fix */
 /* need to add links too */
 .articles {
-
     @media (width > 950px) {
         :hover {
         scale: 105%;
         }
     }
-
 }
 
 section ol li {
@@ -196,19 +194,6 @@ line {
     stroke: var(--article3);
     stroke-width: 5rem;
 }
-
-/* tried color in the h1 - not sure yet */
-/* span:first-child {
-    color: var(--article1);
-}
-
-span:nth-child(2) {
-    color: var(--article2);
-}
-
-span:last-child {
-    color: var(--article3);
-} */
 
 span {
     color: var(--maincolor);
@@ -284,7 +269,7 @@ a {
         padding-inline: calc(var(--padding)*4);
     }
     @media (width > 1200px) {
-        margin-inline-start: calc(var(--padding)*20);  
+        margin-inline-start: calc(var(--padding)*16);  
     }
 }
 
@@ -294,6 +279,7 @@ a {
     display: inline-block;
 }
 
+/* this is repeated - need to fix  */
 .open {
     padding-block-start: calc(var(--padding)*4);
 
@@ -307,6 +293,6 @@ a {
     }
 
     @media (width > 1200px) {
-        margin-inline-start: calc(var(--padding)*20);  
+        margin-inline-start: calc(var(--padding)*16);  
     }
 }
