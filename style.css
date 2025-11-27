@@ -262,3 +262,51 @@ a {
     }
 }
 
+/* need to add down arrow + fix the default styles*/
+.colophon {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: calc(var(--lineheight)*0.9);
+    text-transform: uppercase;
+    color: var(--lightcolor);
+    padding-block: var(--padding);
+    padding-inline: var(--padding);
+    background-color: var(--maincolor);
+
+    @media (width > 600px) {
+        font-size: 4rem; 
+        padding-block: calc(var(--padding)*2);
+        padding-inline: calc(var(--padding)*2);
+    }
+
+    @media (width > 950px) {
+        font-size: 6rem; 
+        padding-inline: calc(var(--padding)*4);
+    }
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*20);  
+    }
+}
+
+.colophon::after {
+    content: ">";
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+.open {
+    padding-block-start: calc(var(--padding)*4);
+
+    @media (width > 600px) {
+        font-size: 1.2rem;
+        padding-inline: calc(var(--padding)*2);
+        max-width: 75ch;
+    }
+    @media (width > 950px) {
+        padding-inline: calc(var(--padding)*4);   
+    }
+
+    @media (width > 1200px) {
+        margin-inline-start: calc(var(--padding)*20);  
+    }
+}
