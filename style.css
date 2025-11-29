@@ -296,3 +296,20 @@ a {
         margin-inline-start: calc(var(--padding)*16);  
     }
 }
+
+ /* img {
+    padding-block-start: calc(var(--padding)*4);
+
+    @media (width > 950px) {
+        width: 300px;
+        padding-block-start: 0;
+    }
+ } */
+
+ /* footer {
+    background: url(./image2.png);
+    background-position: center;
+    background-size: 50rem;
+
+
+}  */
