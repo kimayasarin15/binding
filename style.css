@@ -6,7 +6,7 @@
     --lightcolor: white;
     --article1: #FF2F00;
     --article2: #3631FB;
-    --article3: #EB51FF;
+    --article3: #EB51FF; 
     --padding: 1rem;
     --lineheight: 100%
 }
@@ -23,6 +23,7 @@ h1 {
     }
     @media (width > 1200px) {
         margin-inline-start: calc(var(--padding)*10);  
+        padding-block-start: calc(var(--padding)*15);
     }
 }
 
@@ -101,18 +102,6 @@ footer {
     }
 }
 
-/* img {
-    width:20%;
-} */
-
-li {
-    p {
-        text-align: left;
-        padding-block: var(--padding);
-        color: var(--lightcolor);
-        font-size: 1.2rem;
-    }
-}
 
 section ol {
     display: flex;
@@ -121,7 +110,6 @@ section ol {
     /* gap: 1rem; */
     justify-content: center;
     padding-block: 3rem;
-
     list-style-position: inside;
     counter-reset: index;
 
@@ -151,6 +139,13 @@ section ol {
 section ol li {
     flex-grow: 1;
     padding: 2rem;
+    text-align: left;
+    p {
+        padding-block: var(--padding);
+        color: var(--lightcolor);
+        text-transform: none;
+        font-weight: 400;
+    }
 }
 
 
@@ -249,7 +244,7 @@ a {
 
 /* need to add down arrow + fix the default styles*/
 .colophon {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: calc(var(--lineheight)*0.9);
     text-transform: uppercase;
@@ -259,14 +254,15 @@ a {
     background-color: var(--maincolor);
 
     @media (width > 600px) {
-        font-size: 4rem; 
+        font-size: 3rem; 
         padding-block: calc(var(--padding)*2);
         padding-inline: calc(var(--padding)*2);
     }
 
     @media (width > 950px) {
-        font-size: 6rem; 
+        font-size: 5rem; 
         padding-inline: calc(var(--padding)*4);
+        margin-block-start: calc(var(--padding)*4);
     }
     @media (width > 1200px) {
         margin-inline-start: calc(var(--padding)*16);  

@@ -23,7 +23,7 @@ header {
 h1 {
     font-size: 3.2rem;
     font-weight: 700;
-    line-height: calc(var(--lineheight)*0.9);
+    line-height: calc(var(--lineheight)*0.8);
     text-transform: uppercase;
     color: var(--maincolor);
     padding-block: calc(var(--padding)*4);
@@ -109,14 +109,14 @@ span {
 
 /* my top nav bar for getting between pages */
 nav ol {
-    display: flex;
-    flex-direction: row;
-    font-size: 1rem;
+    /* font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 500; */
 
     @media (width > 600px) {
         font-size: 1.3rem; 
+        display: flex;
+        flex-direction: row;
     }
     @media (width > 950px) {
         font-size: 1.5rem; 
@@ -134,7 +134,9 @@ nav ol {
 } */
 
 .sticky li:hover {
-    transform: translateY(20px);
+   @media (width > 600px) {
+    transform: translateY(20px); 
+}
 }
 
 nav ol li {
@@ -142,13 +144,19 @@ nav ol li {
     color: var(--lightcolor);
     padding-inline: calc(var(--padding)*0.7);
     padding-block: calc(var(--padding)*1.2);
-    width: 100vh;
     text-align: center;
-      a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    a {
         text-decoration: none;
     }
-
-     @media (width > 950px) {
+    @media (width > 600px) {
+        font-size: 1.2rem;
+        width: 100vh; 
+    }
+    @media (width > 950px) {
         padding-inline: calc(var(--padding)*3);
         padding-block: calc(var(--padding)*2);
     }
