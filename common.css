@@ -146,6 +146,7 @@ nav ol li {
     text-align: center;
       a {
         text-decoration: none;
+        display: block;
     }
 
      @media (width > 950px) {
