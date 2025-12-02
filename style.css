@@ -12,7 +12,7 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
 
     @media (width > 480px) {
         font-size: 4rem;     
@@ -92,11 +92,10 @@ p {
 
 .together {
     /* to avoid overlap of text and svg I adjusted the margin in between these two widths */
-    @media (width > 475px) and (width < 600px) {
+    @media (width > 430px) and (width < 600px) {
         margin-block-start: calc(var(--padding)*6);
     }
 }
-
 
 footer {
     border-block: none;
@@ -209,7 +208,7 @@ a {
 
 .svg {
     rotate: 90deg;
-    scale: 100%;
+    scale: 110%;
     margin-block-end: 3rem;
 
     @media (width > 500px) {

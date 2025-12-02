@@ -287,3 +287,18 @@ main {
     padding-block-end: calc(var(--padding)*6);
 }
 
+/* trying animation from MDN but not sure about it */
+
+/* svg {
+    animation-duration: 3s;
+    animation-name: fade;
+}
+
+@keyframes fade {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 75%;
+    }
+} */
