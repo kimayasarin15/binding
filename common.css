@@ -129,12 +129,11 @@ nav ol {
     top:0;    
 }
 
-/* .sticky li {
-    transition: transform 0.3s ease;
-} */
 
+/* from class how to translate down */
 .sticky li:hover {
-    transform: translateY(20px);
+    @media (width > 950px) {
+        transform: translateY(20px);}
 }
 
 nav ol li {
