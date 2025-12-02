@@ -109,8 +109,6 @@ span {
 
 /* my top nav bar for getting between pages */
 nav ol {
-    display: flex;
-    flex-direction: row;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -120,6 +118,8 @@ nav ol {
     }
     @media (width > 950px) {
         font-size: 1.5rem; 
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -142,16 +142,18 @@ nav ol li {
     color: var(--lightcolor);
     padding-inline: calc(var(--padding)*0.7);
     padding-block: calc(var(--padding)*1.2);
-    width: 100vh;
     text-align: center;
       a {
         text-decoration: none;
         display: block;
     }
-
-     @media (width > 950px) {
+    /* @media (width > 600px) {
+        width: 100vh;
+    } */
+    @media (width > 950px) {
         padding-inline: calc(var(--padding)*3);
         padding-block: calc(var(--padding)*2);
+        width: 100vh;
     }
 }
 
@@ -225,7 +227,7 @@ footer {
     border-top-width: 4rem;
     border-bottom-width: 0.1rem;
 
-     @media (width > 600px) {
+    @media (width > 600px) {
         padding-inline: calc(var(--padding)*2);
     }
     
