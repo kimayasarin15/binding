@@ -12,7 +12,7 @@
 /* finally sorta understadning calc and var - tried it for padding and line height on direction 1 */
 body {
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     /* prevents vertical scroll from class website/MDN */
 }
 
@@ -170,7 +170,6 @@ summary {
 /* to highlight the page it's on */
 #select {
     background-color: var(--maincolor);
-  /*  */
 }
 
 
@@ -213,8 +212,6 @@ summary {
 /* my in text highlights */
 strong {
     font-weight: 500;
-    /* background-color: var(--accentcolor);
-    color: var(--lightcolor); */
     display: inline;
     /* Looked at Evgenii and Zarah's project 2 for underlining */
     text-decoration: underline;
@@ -260,15 +257,6 @@ a {
     text-decoration: underline;
 }
 
-/* svg styling */
-svg {
-    display: block;
-}
-
-line {
-    stroke: var(--accentcolor);
-    stroke-width: 3rem;
-}
 
 blockquote {
     font-size: 1rem;
@@ -295,6 +283,7 @@ svg {
     position: absolute;
     z-index: -1;
     max-width: 100%;
+    overflow-x: hidden; 
     
 }
 

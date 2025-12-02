@@ -135,7 +135,6 @@ section ol {
 }
 
 /* sometimes this hovers the whole block - sometimes it hovers each element need to fix */
-/* need to add links too */
 .articles {
     @media (width > 950px) {
         :hover {
@@ -177,26 +176,7 @@ section ol li:last-child {
        background-color: var(--article3);  
 }
 
-line {
-    position: absolute;
-    z-index: -1;
-}
 
-.line1 {
-    stroke: var(--article1);
-    stroke-width: 5rem;
-    z-index: -1;
-}
-
-.line2 {
-    stroke: var(--article2);
-    stroke-width: 5rem;
-}
-
-.line3 {
-    stroke: var(--article3);
-    stroke-width: 5rem;
-}
 
 span {
     color: var(--maincolor);
@@ -226,12 +206,6 @@ span {
 a { 
     text-decoration: none;
 }
-
-/* svg {
-    position: absolute;
-    z-index: -1;
-    scale: 50%;
-} */
 
 .svg {
     rotate: 90deg;
