@@ -99,24 +99,33 @@ p {
 
 
 footer {
-    padding-block-start: calc(var(--padding)*6);
     border-block: none;
-    padding-inline-start: 0;
+    padding-inline: 0;
     p {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.5rem;
+        color:var(--lightcolor);
     }
-    @media (width > 600px) {
-        padding-inline: 0;
+    img {
+        max-width: 450px;
+        width: 100%;
     }
-    @media (width>950px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;    
+    @media (width>450px) {
+        display: grid;
+        grid-template-columns: 2fr auto;
+        img {
+            height: 100%;
+            max-height: 200px;
+        }  
     }
 }
 
+.footertext {
+    display: flex;
+    flex-direction: column;
+      
+}
 
 section ol {
     display: flex;
