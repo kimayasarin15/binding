@@ -9,10 +9,8 @@
     --lineheight: 100%
 }
 
-
 body {
-    /* padding-inline-end: calc(var(--padding)*3); */
-    
+    overflow-x: hidden; 
 }
 
 main p {

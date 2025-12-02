@@ -77,7 +77,11 @@ p {
 }
 
 .together {
-     padding-block: calc(var(--padding)*4);
+    padding-block: calc(var(--padding)*4);
+    /* to avoid overlap of text and svg I adjusted the margin in between these two widths */
+    @media (width > 475px) and (width < 600px) {
+        margin-block-start: calc(var(--padding)*6);
+    }
 
     @media (width > 950px) {
         padding: calc(var(--padding)*6);
@@ -231,7 +235,7 @@ a {
 
 .svg {
     rotate: 90deg;
-    scale: 150%;
+    scale: 100%;
     margin-block-end: 3rem;
 
     @media (width > 500px) {

@@ -9,6 +9,10 @@
     --lineheight: 100%
 }
 
+body {
+    overflow-x: hidden; 
+}
+
 h2 {
     border-style: none;
 }
