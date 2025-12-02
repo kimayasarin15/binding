@@ -93,4 +93,5 @@ article ol li::before {
 
 .svg {
    scale: 120%;
+    opacity: 75%;
 }
