@@ -47,10 +47,8 @@ footer {
 }
 
 
-/* svg {
-    position: absolute;
-    z-index: -1;
-    scale: 20%;
+.svg {
+    scale: 150%;
     top: 0;
     left: 0;
-} */
+}

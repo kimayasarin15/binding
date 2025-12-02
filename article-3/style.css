@@ -34,3 +34,9 @@ h1 {
         max-width: 15ch;
     }
 }
+
+.svg {
+    scale: 140%;
+    top: 100;
+    left: 100;
+}

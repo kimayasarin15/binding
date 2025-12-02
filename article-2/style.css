@@ -122,3 +122,8 @@ article ol li::before {
 }
 
 
+.svg {
+    scale: 150%;
+    top: 10;
+    left: 100;
+}

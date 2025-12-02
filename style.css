@@ -230,9 +230,6 @@ a {
 } */
 
 .svg {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
     rotate: 90deg;
     scale: 150%;
     margin-block-end: 3rem;
@@ -243,6 +240,7 @@ a {
     @media (width > 720px) {
         rotate: 0deg;
         scale: 100%;
+        /* max-width: 100vh; */
     }
 }
 
@@ -268,9 +266,9 @@ a {
         padding-inline: calc(var(--padding)*4);
         margin-block-start: calc(var(--padding)*4);
     }
-    @media (width > 1200px) {
+    /* @media (width > 1200px) {
         margin-inline-start: calc(var(--padding)*16);  
-    }
+    } */
 }
 
 .colophon::after {
