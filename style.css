@@ -12,11 +12,13 @@
 }
 
 h1 {
-    font-size: 3.4rem;
+    font-size: 3rem;
 
+    @media (width > 480px) {
+        font-size: 4rem;     
+    }
     @media (width > 600px) {
-        font-size: 5rem;
-        
+        font-size: 5rem;     
     }
 
     @media (width > 950px) {
@@ -76,12 +78,8 @@ p {
     }
 }
 
-.together {
+.together, .open {
     padding-block: calc(var(--padding)*4);
-    /* to avoid overlap of text and svg I adjusted the margin in between these two widths */
-    @media (width > 475px) and (width < 600px) {
-        margin-block-start: calc(var(--padding)*6);
-    }
 
     @media (width > 950px) {
         padding: calc(var(--padding)*6);
@@ -92,21 +90,30 @@ p {
 
 }
 
+.together {
+    /* to avoid overlap of text and svg I adjusted the margin in between these two widths */
+    @media (width > 475px) and (width < 600px) {
+        margin-block-start: calc(var(--padding)*6);
+    }
+}
+
 
 footer {
-    padding-block: calc(var(--padding)*6);
-    text-transform: uppercase;
-    font-weight: 700;
+    padding-block-start: calc(var(--padding)*6);
     border-block: none;
+    padding-inline-start: 0;
     p {
-        padding-block: calc(var(--padding)*0.5);
+        text-transform: uppercase;
+        font-weight: 700;
         font-size: 1.5rem;
     }
-
+    @media (width > 600px) {
+        padding-inline: 0;
+    }
     @media (width>950px) {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: center;    
     }
 }
 
@@ -115,7 +122,6 @@ section ol {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* gap: 1rem; */
     justify-content: center;
     padding-block: 3rem;
     list-style-position: inside;
@@ -182,22 +188,7 @@ span {
     color: var(--maincolor);
 }
 
-
-/* added an image I wanted it to rotate as the screen changes so it fits the width better */
-/* img {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    rotate: 90deg;
-    scale: 150%;
-    /* filter: blur(5px); */
-    /* @media (width > 950px) {
-        rotate: 0deg;
-        scale: 100%;
-
-    }
-} */ 
-
+ 
 /* targeting last h2 in list so they are all on two lines each */
 .articles li:last-child h2 {
     max-width: 12ch;
@@ -218,11 +209,9 @@ a {
     @media (width > 720px) {
         rotate: 0deg;
         scale: 100%;
-        /* max-width: 100vh; */
     }
 }
 
-/* need to add down arrow + fix the default styles*/
 .colophon {
     font-size: 2.5rem;
     font-weight: 700;
@@ -244,9 +233,6 @@ a {
         padding-inline: calc(var(--padding)*4);
         margin-block-start: calc(var(--padding)*4);
     }
-    /* @media (width > 1200px) {
-        margin-inline-start: calc(var(--padding)*16);  
-    } */
 }
 
 .colophon::after {
@@ -255,37 +241,3 @@ a {
     display: inline-block;
 }
 
-/* this is repeated - need to fix  */
-.open {
-    padding-block-start: calc(var(--padding)*4);
-
-    @media (width > 600px) {
-        font-size: 1.2rem;
-        padding-inline: calc(var(--padding)*2);
-        max-width: 75ch;
-    }
-    @media (width > 950px) {
-        padding-inline: calc(var(--padding)*4);   
-    }
-
-    @media (width > 1200px) {
-        margin-inline-start: calc(var(--padding)*16);  
-    }
-}
-
- /* img {
-    padding-block-start: calc(var(--padding)*4);
-
-    @media (width > 950px) {
-        width: 300px;
-        padding-block-start: 0;
-    }
- } */
-
- /* footer {
-    background: url(./image2.png);
-    background-position: center;
-    background-size: 50rem;
-
-
-}  */
