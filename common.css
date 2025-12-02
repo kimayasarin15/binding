@@ -108,7 +108,7 @@ span {
 
 
 /* my top nav bar for getting between pages */
-nav ol {
+nav ol, summary {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -118,11 +118,15 @@ nav ol {
     }
     @media (width > 950px) {
         font-size: 1.5rem; 
+    }
+}
+
+nav ol {
+    @media (width > 950px) {
         display: flex;
         flex-direction: row;
     }
 }
-
 /* making nav sticky */
 .sticky {
     position: sticky;
@@ -136,7 +140,7 @@ nav ol {
         transform: translateY(20px);}
 }
 
-nav ol li {
+nav ol li, summary {
     background-color: var(--accentcolor);
     color: var(--lightcolor);
     padding-inline: calc(var(--padding)*0.7);
@@ -152,13 +156,19 @@ nav ol li {
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*3);
         padding-block: calc(var(--padding)*2);
-        width: 100vh;
+        width: 100%;
     }
+}
+
+summary {
+    background-color: var(--maincolor);
+    cursor: pointer;
 }
 
 /* to highlight the page it's on */
 #select {
     background-color: var(--maincolor);
+  /*  */
 }
 
 

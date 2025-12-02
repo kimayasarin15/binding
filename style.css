@@ -12,7 +12,12 @@
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3.4rem;
+
+    @media (width > 600px) {
+        font-size: 5rem;
+        
+    }
 
     @media (width > 950px) {
         padding-inline: calc(var(--padding)*6);
