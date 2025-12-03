@@ -1,42 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-     font-size: 100%;
+    font-size: 100%;
     --maincolor: #181818;
     --lightcolor: white;
     --article1: #FF2F00;
     --article2: #3631FB;
     --article3: #EB51FF; 
-    --padding: 1rem;
-    --lineheight: 100%
+    --spacing: 1rem;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: var(--typedmedium3);
 
-    @media (width > 600px) {
-        font-size: 5rem;     
-    }
 
     @media (width > 950px) {
-        padding-inline: calc(var(--padding)*6);
+        padding-inline: calc(var(--spacing)*6);
         max-width: 15ch;
-        font-size: 8rem;
-        padding-block-start: calc(var(--padding)*10);
+        font-size: var(--typelarge2);
+        padding-block-start: calc(var(--spacing)*10);
     }
     @media (width > 1200px) {
-        margin-inline-start: calc(var(--padding)*10);  
-        padding-block-start: calc(var(--padding)*15);
+        margin-inline-start: calc(var(--spacing)*10);  
+        padding-block-start: calc(var(--spacing)*15);
     }
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: var(--typemedium);
     border-style: none;
     color: var(--lightcolor);
     
     @media (width > 600px) {
-        padding-inline: var(--padding);
+        padding-inline: var(--spacing);
+        font-size: var(--typemedium2);
     }
     
     @media (width > 1200px) {
@@ -46,12 +43,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
-    line-height: 90%;
+    font-size: var(--typesmall2);
+    line-height: var(--lineheight);
     text-transform: uppercase;
     color: var(--maincolor);
-    padding-inline: 1rem;
-    padding-block-end: 1rem;
+    padding-inline: var(--spacing);
+    padding-block-end: var(--spacing);
     font-weight: 400;
     color: var(--lightcolor);
 }
@@ -68,7 +65,7 @@ h3 {
 }
 
 p {
-    padding-inline: var(--padding);
+    padding-inline: var(--spacing);
     color: var(--maincolor);
     @media (width > 1200px) {
         margin-inline-start: 0
@@ -76,13 +73,13 @@ p {
 }
 
 .together, .open {
-    padding-block: calc(var(--padding)*4);
+    padding-block: calc(var(--spacing)*4);
 
     @media (width > 950px) {
-        padding: calc(var(--padding)*6);
+        padding: calc(var(--spacing)*6);
     }
     @media (width > 1200px) {
-        margin-inline-start: calc(var(--padding)*10);  
+        margin-inline-start: calc(var(--spacing)*10);  
     }
 
 }
@@ -90,7 +87,7 @@ p {
 .together {
     /* to avoid overlap of text and svg I adjusted the margin */
     @media (width < 600px) {
-        margin-block-start: calc(var(--padding)*4);
+        margin-block-start: calc(var(--spacing)*4);
     }
 }
 
@@ -99,8 +96,8 @@ footer {
     padding-inline: 0;
     p {
         text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.5rem;
+        font-weight: var(--midweight);
+        font-size: var(--typesmall2);
         color:var(--lightcolor);
     }
     img {
@@ -159,7 +156,7 @@ section ol li {
     padding: 2rem;
     text-align: left;
     p {
-        padding-block: var(--padding);
+        padding-block: var(--spacing);
         color: var(--lightcolor);
         text-transform: none;
         font-weight: 400;
@@ -168,10 +165,10 @@ section ol li {
 
 
 section ol li::before {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--fontfamily);
     font-weight: 700;
-    font-size: 2rem;
-    padding: var(--padding);
+    font-size: var(--typemedium);
+    padding: var(--spacing);
     color: var(--lightcolor);
 }
 
@@ -218,25 +215,25 @@ a {
 }
 
 .colophon {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: calc(var(--lineheight)*0.9);
+    font-size: var(--typemedium);
+    font-weight: var(--heavyweight);
+    line-height: var(--lineheight);
     text-transform: uppercase;
     color: var(--lightcolor);
-    padding-block: var(--padding);
-    padding-inline: var(--padding);
+    padding-block: var(--spacing);
+    padding-inline: var(--spacing);
     background-color: var(--maincolor);
 
     @media (width > 600px) {
-        font-size: 3rem; 
-        padding-block: calc(var(--padding)*2);
-        padding-inline: calc(var(--padding)*2);
+        font-size: var(--typemedium2); 
+        padding-block: calc(var(--spacing)*2);
+        padding-inline: calc(var(--spacing)*2);
     }
 
     @media (width > 950px) {
-        font-size: 5rem; 
-        padding-inline: calc(var(--padding)*4);
-        margin-block-start: calc(var(--padding)*4);
+        font-size: var(--typedmedium3);
+        padding-inline: calc(var(--spacing)*4);
+        margin-block-start: calc(var(--spacing)*4);
     }
 }
 

@@ -2,12 +2,7 @@
 
 
 :root {
-    font-size: 100%;
-    --maincolor: #181818;
     --accentcolor: #FF2F00;
-    --lightcolor: white;
-    --padding: 1rem;
-    --lineheight: 100%
 }
 
 h2 {
@@ -16,7 +11,7 @@ h2 {
 
 footer {
     p {
-        padding-block: 1rem;
+        padding-block: var(--spacing);
         color: var(--maincolor);
         padding-inline: 0;
     }
