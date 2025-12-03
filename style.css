@@ -12,11 +12,8 @@
 }
 
 h1 {
-    font-size: 3.2rem;
+    font-size: 4rem;
 
-    @media (width > 480px) {
-        font-size: 4rem;     
-    }
     @media (width > 600px) {
         font-size: 5rem;     
     }
@@ -91,9 +88,9 @@ p {
 }
 
 .together {
-    /* to avoid overlap of text and svg I adjusted the margin in between these two widths */
-    @media (width > 430px) and (width < 600px) {
-        margin-block-start: calc(var(--padding)*6);
+    /* to avoid overlap of text and svg I adjusted the margin */
+    @media (width < 600px) {
+        margin-block-start: calc(var(--padding)*4);
     }
 }
 
@@ -208,10 +205,10 @@ a {
 
 .svg {
     rotate: 90deg;
-    scale: 110%;
+    scale: 150%;
     margin-block-end: 3rem;
 
-    @media (width > 500px) {
+    @media (width > 450px) {
         scale: 100%;
     }
     @media (width > 720px) {
