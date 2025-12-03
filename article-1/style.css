@@ -9,7 +9,7 @@ h2 {
     border-style: none;
 }
 
-footer {
+.backtop {
     p {
         padding-block: var(--spacing);
         color: var(--maincolor);
@@ -29,3 +29,9 @@ footer {
     opacity: 75%;
 }
 
+.bottom2 {
+    background-color: var(--article2);
+    @media (width > 700px) {
+        margin-inline-start: calc(var(--spacing)*10); 
+    }
+}

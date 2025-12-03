@@ -9,13 +9,6 @@ h2 {
     border-style: none;
 }
 
-footer {
-    p {
-        padding-block: var(--spacing);
-        color: var(--maincolor);
-        padding-inline: 0;
-    }
-}
 
 .author {
     p {
@@ -34,4 +27,11 @@ h1 {
 .svg {
     scale: 120%;
     opacity: 75%;
+}
+
+.bottom2 {
+    background-color: var(--article1);
+    @media (width > 700px) {
+        margin-inline-start: calc(var(--spacing)*10); 
+    }
 }
