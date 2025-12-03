@@ -327,10 +327,10 @@ footer {
         
     }
     img {
-        max-width: 450px;
+        max-width: 500px;
         width: 100%;
     }
-    @media (width>450px) {
+    @media (width>500px) {
         display: grid;
         grid-template-columns: 3fr auto;
         img {
