@@ -316,7 +316,10 @@ svg {
     z-index: -1;
     max-width: 100%;
     overflow-x: hidden; 
-    
+    fill: var(--article1);
+    path {
+        fill: var(--article1);
+    }
 }
 
 main {
