@@ -4,6 +4,9 @@
     --accentcolor: #3631FB;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 main p {
     padding-inline: 0;

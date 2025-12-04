@@ -5,6 +5,9 @@
     --accentcolor: #FF2F00;
 }
 
+body {
+    overflow-x: hidden;
+}
 h2 {
     border-style: none;
 }
@@ -37,7 +40,7 @@ h2 {
 }
 
 .red {
-    position: absolute;
+    position: relative;
     z-index: -1;
     top: 2rem;
     right: 2rem;
@@ -53,4 +56,5 @@ h2 {
     height: 400px;
     }
 }
+
 

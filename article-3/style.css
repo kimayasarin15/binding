@@ -3,7 +3,9 @@
 :root {
     --accentcolor: #EB51FF;
 }
-
+body {
+    overflow-x: hidden;
+}
 
 h2 {
     border-style: none;
