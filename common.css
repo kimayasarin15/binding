@@ -432,16 +432,17 @@ footer {
 		"second img"
 		"third img";
 	grid-template-columns: 1fr auto;
-	inline-size: 100%;
-	block-size: 20rem; 
-
+	block-size: 20rem;
     }
 }
 
 img {
-	grid-area: img;
+    @media (width>600px) {
+    grid-area: img;
 	block-size: 100%;
 	aspect-ratio: 1;
+    block-size: 20rem;
+    }
 }
 
 /* .footertext {
