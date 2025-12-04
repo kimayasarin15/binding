@@ -199,19 +199,6 @@ a {
     text-decoration: none;
 }
 
-/* .svg {
-    rotate: 90deg;
-    scale: 150%;
-    margin-block-end: 3rem;
-
-    @media (width > 450px) {
-        scale: 100%;
-    }
-    @media (width > 720px) {
-        rotate: 0deg;
-        scale: 100%;
-    }
-} */
 
 .colophon {
     font-size: var(--typemedium);
@@ -255,10 +242,10 @@ footer {
 
 
 
-svg {
+/* svg {
     z-index: -10;
     max-width: 100%;
-}
+} */
 
 .svgparent {
     display: flex;
@@ -275,7 +262,6 @@ svg {
 
 
 .red {
-    
     transform: scale(0.8) translateY(-30%) translateX(-20%);
     @media (width > 500px) {
         transform: scale(2) translateY(0);
