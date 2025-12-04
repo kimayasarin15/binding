@@ -44,6 +44,8 @@ body {
 
 header {
     padding-block-end: calc(var(--spacing)*2);
+    position: relative; 
+    overflow-x: hidden;
 
 }
 

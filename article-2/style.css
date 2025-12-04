@@ -5,9 +5,6 @@
     --accentcolor: #4D64FF;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 main p {
     padding-inline: 0;
