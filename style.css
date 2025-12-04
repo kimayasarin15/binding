@@ -118,10 +118,11 @@ section ol {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding-block: 3rem;
     list-style-position: inside;
     counter-reset: index;
-
+    /* a {
+        padding-block: 3rem;
+    } */
 	> li::before {
 		content: counters(index, '.') '.';
 		counter-increment: index;
@@ -142,6 +143,11 @@ section ol {
         scale: 105%;
         }
     }
+}
+
+.articles li a {
+    display: block;
+    
 }
 
 section ol li {
