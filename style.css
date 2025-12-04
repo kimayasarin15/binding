@@ -263,13 +263,8 @@ svg {
 
 
 
-
 .red {
     transform: scale(0.8) translateY(-30%) translateX(-20%);
-    /* transform: scale(0.8) translateY(-10rem) translateX(-10rem); */
-    /* @media (width>900px) {
-    transform: scale(1.2);
-    } */
     @media (width > 500px) {
         transform: scale(2) translateY(0);
     }
@@ -284,11 +279,6 @@ svg {
 .blue {
     position: relative;
     transform: scale(0.8) translateY(-120%) translateX(30%);
-    /* transform: scale(0.8) translateY(-25rem) translateX(10rem); */
-    /* transform: translateY(-10rem); */
-    /* @media (width>900px) {
-    transform: translateY(20rem) scale(1.5);
-    } */
     @media (width > 500px) {
         transform: scale(2) translateY(30%) translateX(50%);
     }
@@ -303,10 +293,6 @@ svg {
 .pink {
     position: relative;
     transform: scale(0.8) translateY(-200%) translateX(-20%);
-    /* transform: scale(0.8) translateY(-40rem) translateX(-10rem); */
-    /* @media (width>900px) {
-    transform: translateX(10rem) translateY(10rem) scale(1.5); 
-    } */
     @media (width > 500px) {
         transform: scale(2) translateY(50%) translateX(-50%);
     }

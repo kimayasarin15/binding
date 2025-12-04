@@ -85,10 +85,7 @@ article ol li::before {
 }
 
 
-.svg {
-   scale: 120%;
-   opacity: 75%;
-}
+
 
 .bottom2 {
     background-color: var(--article3);

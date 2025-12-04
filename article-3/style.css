@@ -38,6 +38,12 @@ h1 {
     }
 }
 
+svg {
+    z-index: -10;
+    max-width: 100%;
+}
+
+
 .pink {
     position: absolute;
     transform: scale(0.7) translateY(-40%) translateX(40%);
@@ -51,7 +57,7 @@ h1 {
     }
 
     path {
-        fill: var(--article3);
+        fill: var(--accentcolor);
     }
 }
 
