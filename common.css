@@ -173,6 +173,7 @@ nav ol {
     z-index: 1;
 }
 
+
 /* from class how to translate down */
 .sticky li:hover {
     @media (width > 950px) {

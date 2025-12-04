@@ -120,18 +120,16 @@ section ol {
     justify-content: center;
     list-style-position: inside;
     counter-reset: index;
-    /* a {
-        padding-block: 3rem;
-    } */
 	> li::before {
 		content: counters(index, '.') '.';
 		counter-increment: index;
 	}
 
-     /* this makes it become a row */
+    
     @media (width > 950px) {
         flex-direction: row;
         flex-wrap: nowrap;
+  
         
     }
 }
@@ -151,14 +149,11 @@ section ol {
 }
 
 section ol li {
-    flex-grow: 1;
-    padding: 2rem;
     text-align: left;
+    padding-block: var(--spacing);
     p {
-        padding-block: var(--spacing);
         color: var(--lightcolor);
         text-transform: none;
-        font-weight: 400;
     }
 }
 
