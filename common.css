@@ -39,12 +39,13 @@
 
 body {
     font-family: var(--fontfamily);
-    overflow-x: hidden;
+     overflow-x: hidden;
     /* prevents vertical scroll from class website/MDN */
 }
 
 header {
     padding-block-end: calc(var(--spacing)*2);
+
 }
 
 
@@ -57,6 +58,8 @@ h1 {
     color: var(--maincolor);
     padding-block: calc(var(--spacing)*4);
     padding-inline: var(--spacing);
+    z-index: 10;
+    position: relative;
 
     @media (width > 600px) {
         font-size: var(--typemedium3);
@@ -73,6 +76,7 @@ h1 {
         margin-inline-start: calc(var(--spacing)*20);  
     }
 }
+
 
 h2 {
     border-block-end: solid;
@@ -316,49 +320,58 @@ a {
 
 
 svg {
-    position: relative;
     z-index: -10;
     max-width: 100%;
 }
 
 .svgparent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+
 }
 
 
+
+/* 
 .red {
-    transform: scale(2);
-    /* @media (width>900px) {
-    transform: scale(1.2);
-    } */
+    transform: scale(0.8) translateY(-30%) translateX(-20%);
+    @media (width > 500px) {
+        transform: scale(2) translateY(0);
+    }
+    @media (width > 950px) {
+        transform: scale(1.5) translateY(0);
+    }
     path {
         fill: var(--article1);
     }
 }
 
 .blue {
-    transform: scale(2) translateY(15rem);
-    /* transform: translateY(-10rem); */
-    /* @media (width>900px) {
-    transform: translateY(20rem) scale(1.5);
-    } */
+    position: relative;
+    transform: scale(0.8) translateY(-120%) translateX(30%);
+    @media (width > 500px) {
+        transform: scale(2) translateY(30%) translateX(50%);
+    }
+    @media (width > 950px) {
+        transform: scale(1.5) translateY(20%) translateX(70%);
+    }
     path {
         fill: var(--article2);
     }
 }
 
 .pink {
-    transform: scale(2) translateY(5rem);
-    /* @media (width>900px) {
-    transform: translateX(10rem) translateY(10rem) scale(1.5); 
-    } */
+    position: relative;
+    transform: scale(0.8) translateY(-200%) translateX(-20%);
+    @media (width > 500px) {
+        transform: scale(2) translateY(50%) translateX(-50%);
+    }
+     @media (width > 950px) {
+        transform: scale(1.5) translateY(50%) translateX(-70%);
+    }
     path {
         fill: var(--article3);
     }
-}
+} */
 
 
 
@@ -403,7 +416,7 @@ main {
 footer {
     border-block: none;
     padding-inline: 0;
-    
+
     p {
         text-transform: uppercase;
         font-weight: var(--midweight);
@@ -414,6 +427,9 @@ footer {
     }
     div {
         height: 100%;
+    }
+    img {
+        display: block;
     }
     @media (width>500px) {
         display: grid;

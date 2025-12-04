@@ -79,14 +79,11 @@ p {
 
 .together, .open {
     padding-block: calc(var(--spacing)*4);
-
+    
     @media (width > 950px) {
         padding: calc(var(--spacing)*6);
     }
     @media (width > 1200px) {
-        margin-inline-start: calc(var(--spacing)*10);  
-    }
-     @media (width > 1200px) {
         margin-inline-start: calc(var(--spacing)*10);  
     }
 
@@ -95,14 +92,17 @@ p {
 .together {
     /* to avoid overlap of text and svg I adjusted the margin */
     @media (width > 300px) {
-        margin-block-start: calc(var(--spacing)*8);
+        mmargin-block-start: calc(var(--spacing)*8);
     }
-    @media (width > 450px) {
+    @media (width > 400px) {
         margin-block-start: calc(var(--spacing)*12);
     }
 
-    @media (width > 600px) {
+    @media (width > 500px) {
         margin-block-start: calc(var(--spacing)*4);
+    }
+    @media (width > 130px) {
+        margin-block-start: calc(var(--spacing)*12);
     }
 }
 
@@ -239,5 +239,81 @@ footer {
         font-size: var(--typesmall2);
         color:var(--lightcolor);
         margin-inline: 0;  
+    }
+}
+
+
+
+svg {
+    z-index: -10;
+    max-width: 100%;
+}
+
+.svgparent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    @media (width > 500px) {
+        flex-direction: row;
+    }
+}
+
+
+
+
+.red {
+    transform: scale(0.8) translateY(-30%) translateX(-20%);
+    /* transform: scale(0.8) translateY(-10rem) translateX(-10rem); */
+    /* @media (width>900px) {
+    transform: scale(1.2);
+    } */
+    @media (width > 500px) {
+        transform: scale(2) translateY(0);
+    }
+    @media (width > 950px) {
+        transform: scale(1.5) translateY(0);
+    }
+    path {
+        fill: var(--article1);
+    }
+}
+
+.blue {
+    position: relative;
+    transform: scale(0.8) translateY(-120%) translateX(30%);
+    /* transform: scale(0.8) translateY(-25rem) translateX(10rem); */
+    /* transform: translateY(-10rem); */
+    /* @media (width>900px) {
+    transform: translateY(20rem) scale(1.5);
+    } */
+    @media (width > 500px) {
+        transform: scale(2) translateY(30%) translateX(50%);
+    }
+    @media (width > 950px) {
+        transform: scale(1.5) translateY(20%) translateX(70%);
+    }
+    path {
+        fill: var(--article2);
+    }
+}
+
+.pink {
+    position: relative;
+    transform: scale(0.8) translateY(-200%) translateX(-20%);
+    /* transform: scale(0.8) translateY(-40rem) translateX(-10rem); */
+    /* @media (width>900px) {
+    transform: translateX(10rem) translateY(10rem) scale(1.5); 
+    } */
+    @media (width > 500px) {
+        transform: scale(2) translateY(50%) translateX(-50%);
+    }
+     @media (width > 950px) {
+        transform: scale(1.5) translateY(50%) translateX(-70%);
+    }
+    path {
+        fill: var(--article3);
     }
 }
