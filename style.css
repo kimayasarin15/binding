@@ -95,9 +95,8 @@ p {
 
 .together {
     /* to avoid overlap of text and svg I adjusted the margin */
-    @media (width > 300px) {
-        mmargin-block-start: calc(var(--spacing)*8);
-    }
+    margin-block-start: calc(var(--spacing)*4);
+   
     @media (width > 400px) {
         margin-block-start: calc(var(--spacing)*12);
     }
@@ -210,6 +209,7 @@ a {
     padding-block: var(--spacing);
     padding-inline: var(--spacing);
     background-color: var(--maincolor);
+    margin-block-start: calc(var(--spacing)*4);
 
     @media (width > 600px) {
         font-size: var(--typemedium2); 
@@ -220,7 +220,6 @@ a {
     @media (width > 950px) {
         font-size: var(--typemedium3);
         padding-inline: calc(var(--spacing)*4);
-        margin-block-start: calc(var(--spacing)*4);
     }
 }
 
@@ -262,7 +261,7 @@ footer {
         transform: scale(2) translateY(0);
     }
     @media (width > 950px) {
-        transform: scale(1.5) translateY(0);
+        transform: scale(1.5);
     }
     path {
         fill: var(--article1);
@@ -273,10 +272,11 @@ footer {
     position: relative;
     transform: scale(0.8) translateY(-120%) translateX(30%);
     @media (width > 500px) {
-        transform: scale(2) translateY(30%) translateX(50%);
+       transform: scale(2) translateY(50%) translateX(10%);
     }
     @media (width > 950px) {
-        transform: scale(1.5) translateY(20%) translateX(70%);
+        transform: scale(1.5) translateY(50%) translateX(10%);
+
     }
     path {
         fill: var(--article2);
@@ -287,10 +287,10 @@ footer {
     position: relative;
     transform: scale(0.8) translateY(-200%) translateX(-20%);
     @media (width > 500px) {
-        transform: scale(2) translateY(50%) translateX(-50%);
+        transform: scale(2) translateY(30%) translateX(20%);
     }
      @media (width > 950px) {
-        transform: scale(1.5) translateY(50%) translateX(-70%);
+        transform: scale(1.5) translateY(10%) translateX(20%);
     }
     path {
         fill: var(--article3);
