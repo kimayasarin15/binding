@@ -13,16 +13,17 @@
 h1 {
     font-size: var(--typemedium3);
 
+    @media (width > 600px) {
+        font-size: var(--typelarge);
+    }
 
     @media (width > 950px) {
         padding-inline: calc(var(--spacing)*6);
         max-width: 15ch;
         font-size: var(--typelarge2);
-        /* padding-block-start: calc(var(--spacing)*10); */
     }
     @media (width > 1200px) {
-        margin-inline-start: calc(var(--spacing)*10);  
-        /* padding-block-start: calc(var(--spacing)*15); */
+        margin-inline-start: calc(var(--spacing)*10); 
     }
 }
 
@@ -81,12 +82,22 @@ p {
     @media (width > 1200px) {
         margin-inline-start: calc(var(--spacing)*10);  
     }
+     @media (width > 1200px) {
+        margin-inline-start: calc(var(--spacing)*10);  
+    }
 
 }
 
 .together {
     /* to avoid overlap of text and svg I adjusted the margin */
-    @media (width < 600px) {
+    @media (width > 300px) {
+        margin-block-start: calc(var(--spacing)*8);
+    }
+    @media (width > 450px) {
+        margin-block-start: calc(var(--spacing)*12);
+    }
+
+    @media (width > 600px) {
         margin-block-start: calc(var(--spacing)*4);
     }
 }

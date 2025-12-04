@@ -322,37 +322,35 @@ svg {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
-
-    @media (width < 600px){
-        flex-direction: column;
-    }
 }
 
+
 .red {
-    @media (width>600px) {
+    transform: scale(2);
+    /* @media (width>900px) {
     transform: scale(1.2);
-    }
+    } */
     path {
         fill: var(--article1);
     }
 }
 
 .blue {
-    transform: translateY(-10rem);
-    @media (width>600px) {
+    transform: scale(2) translateY(15rem);
+    /* transform: translateY(-10rem); */
+    /* @media (width>900px) {
     transform: translateY(20rem) scale(1.5);
-    }
+    } */
     path {
         fill: var(--article2);
     }
 }
 
 .pink {
-    transform: translateY(-20rem);
-    @media (width>600px) {
+    transform: scale(2) translateY(5rem);
+    /* @media (width>900px) {
     transform: translateX(10rem) translateY(10rem) scale(1.5); 
-    }
+    } */
     path {
         fill: var(--article3);
     }
