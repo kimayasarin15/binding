@@ -188,7 +188,7 @@ a {
     text-decoration: none;
 }
 
-.svg {
+/* .svg {
     rotate: 90deg;
     scale: 150%;
     margin-block-end: 3rem;
@@ -200,7 +200,7 @@ a {
         rotate: 0deg;
         scale: 100%;
     }
-}
+} */
 
 .colophon {
     font-size: var(--typemedium);
@@ -264,6 +264,7 @@ svg {
 
 
 .red {
+    
     transform: scale(0.8) translateY(-30%) translateX(-20%);
     @media (width > 500px) {
         transform: scale(2) translateY(0);

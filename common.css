@@ -58,7 +58,7 @@ h1 {
     color: var(--maincolor);
     padding-block: calc(var(--spacing)*4);
     padding-inline: var(--spacing);
-    z-index: 10;
+    /* z-index: 10; */
     position: relative;
 
     @media (width > 600px) {
@@ -425,24 +425,30 @@ footer {
         margin-inline: 0;    
         padding: calc(var(--spacing)*2);
     }
-    div {
-        height: 100%;
-    }
-    img {
-        display: block;
-    }
-    @media (width>500px) {
-        display: grid;
-        grid-template-columns: 2fr 1fr; 
+    @media (width>600px) {
+        	display: grid;
+	    grid-template-areas:
+		"first img"
+		"second img"
+		"third img";
+	grid-template-columns: 1fr auto;
+	inline-size: 100%;
+	block-size: 20rem; 
 
     }
 }
 
-.footertext {
+img {
+	grid-area: img;
+	block-size: 100%;
+	aspect-ratio: 1;
+}
+
+/* .footertext {
     display: flex;
     flex-direction: column;
       
-}
+} */
 
 .first {
     background-color: var(--article1);
