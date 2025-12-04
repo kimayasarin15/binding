@@ -44,8 +44,8 @@ body {
 
 header {
     padding-block-end: calc(var(--spacing)*2);
-    position: relative; 
     overflow-x: hidden;
+    position: relative;
 
 }
 
@@ -327,8 +327,6 @@ svg {
 
 .svgparent {
     position: absolute;
-    overflow-x: hidden;
-
 }
 
 
