@@ -39,7 +39,6 @@
 
 body {
     font-family: var(--fontfamily);
-     overflow-x: hidden;
     /* prevents vertical scroll from class website/MDN */
 }
 
@@ -326,6 +325,7 @@ svg {
 
 .svgparent {
     position: absolute;
+    overflow-x: hidden;
 
 }
 

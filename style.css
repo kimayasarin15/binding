@@ -13,6 +13,11 @@
     --article3: #EB51FF; */
     --spacing: 1rem;
 }
+body {
+    font-family: var(--fontfamily);
+     overflow-x: hidden;
+    /* prevents vertical scroll from class website/MDN */
+}
 
 h1 {
     font-size: var(--typemedium3);
