@@ -418,7 +418,7 @@ footer {
 
     p {
         text-transform: uppercase;
-        font-weight: var(--midweight);
+        font-weight: var(--heavyweight);
         font-size: var(--typesmall2);
         color:var(--lightcolor);
         margin-inline: 0;    
