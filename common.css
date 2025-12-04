@@ -312,70 +312,49 @@ a {
 
 
 svg {
-    position: absolute;
-    z-index: -2;
+    position: relative;
+    z-index: -10;
     max-width: 100%;
-    /* overflow-x: hidden;  */
-    
-    
+}
 
+.svgparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+    @media (width < 600px){
+        flex-direction: column;
+    }
 }
 
 .red {
+    transform: scale(1.2);
     path {
         fill: var(--article1);
     }
 }
 
-.redparent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* margin-block-start: 20rem; */
-}
-
 .blue {
+    transform: translateY(20rem);
     path {
         fill: var(--article2);
     }
 }
 
-.blueparent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-block-start: 20rem;
-}
-
 .pink {
+     transform: translateX(20rem);
+    transform: translateY(50%); 
+         transform: scale(1.1); 
     path {
         fill: var(--article3);
     }
 }
 
-.pinkparent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-block-start: 20rem;
-}
 
-/* .blue {
-    path {
-        fill: var(--article2);
-        transform: translate(500px);
-    }
-}
 
-.pink {
-     path {
-        fill: var(--article3);
-    }
 
-} */
 
 
 /* .blue {
