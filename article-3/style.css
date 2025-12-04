@@ -31,7 +31,7 @@ h1 {
 
 .bottom2 {
     background-color: var(--article1);
-    @media (width > 700px) {
+    @media (width > 850px) {
         margin-inline-start: calc(var(--spacing)*10); 
     }
 }
