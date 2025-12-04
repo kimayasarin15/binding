@@ -15,8 +15,7 @@
 }
 body {
     font-family: var(--fontfamily);
-     /* overflow-x: hidden; */
-    /* prevents vertical scroll from class website/MDN */
+     overflow-x: hidden;
 }
 
 h1 {
@@ -240,12 +239,6 @@ footer {
     }
 }
 
-
-
-/* svg {
-    z-index: -10;
-    max-width: 100%;
-} */
 
 .svgparent {
     display: flex;
