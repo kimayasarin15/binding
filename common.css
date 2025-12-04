@@ -317,10 +317,21 @@ svg {
     max-width: 100%;
     overflow-x: hidden; 
     fill: var(--article1);
+
+}
+
+.red {
     path {
         fill: var(--article1);
     }
 }
+
+/* .blue {
+    path {
+        fill: var(--article2);
+        transform: translate(100px);
+    }
+} */
 
 main {
     padding-block-end: calc(var(--spacing)*6);
