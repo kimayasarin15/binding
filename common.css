@@ -313,10 +313,9 @@ a {
 
 svg {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     max-width: 100%;
     overflow-x: hidden; 
-    fill: var(--article1);
 
 }
 
@@ -329,8 +328,38 @@ svg {
 /* .blue {
     path {
         fill: var(--article2);
-        transform: translate(100px);
+        transform: translate(500px);
     }
+}
+
+.pink {
+     path {
+        fill: var(--article3);
+    }
+
+} */
+
+
+
+
+/* .blue1 { 
+    position: absolute;
+    z-index: -1;
+    width: 30em; 
+    height: 10em; 
+    background-color: var(--article2); 
+    top: calc(var(--spacing)*10);
+    left: var(--spacing);
+}
+
+.blue2 { 
+    position: absolute;
+     z-index: -1;
+    width: 20em; 
+    height: 5em; 
+    background-color: var(--lightcolor); 
+    top: calc(var(--spacing)*12);
+    left: calc(var(--spacing)*2);
 } */
 
 main {
