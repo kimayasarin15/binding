@@ -423,6 +423,7 @@ footer {
         color:var(--lightcolor);
         margin-inline: 0;    
         padding: calc(var(--spacing)*2);
+        justify-content: center;
     }
     @media (width>600px) {
         	display: grid;
@@ -431,7 +432,6 @@ footer {
 		"second img"
 		"third img";
 	grid-template-columns: 1fr auto;
-	block-size: 20rem;
     }
 }
 
@@ -440,15 +440,11 @@ img {
     grid-area: img;
 	block-size: 100%;
 	aspect-ratio: 1;
-    block-size: 20rem;
+    block-size: 23rem;
     }
 }
 
-/* .footertext {
-    display: flex;
-    flex-direction: column;
-      
-} */
+
 
 .first {
     background-color: var(--article1);
