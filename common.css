@@ -403,19 +403,17 @@ main {
 footer {
     border-block: none;
     padding-inline: 0;
+    
     p {
         text-transform: uppercase;
         font-weight: var(--midweight);
         font-size: var(--typesmall2);
         color:var(--lightcolor);
         margin-inline: 0;    
+        padding: calc(var(--spacing)*2);
     }
     div {
         height: 100%;
-    }
-    img {
-        min-height: 100%;
-
     }
     @media (width>500px) {
         display: grid;
