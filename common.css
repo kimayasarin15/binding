@@ -39,13 +39,12 @@
 
 body {
     font-family: var(--fontfamily);
+    overflow-x: hidden;
     /* prevents vertical scroll from class website/MDN */
 }
 
 header {
     padding-block-end: calc(var(--spacing)*2);
-    /* overflow-x: hidden;
-    position: relative; */
 
 }
 

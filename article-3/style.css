@@ -44,10 +44,10 @@ svg {
 
 .pink {
     position: absolute;
-    transform: scale(0.7) translateY(-40%) translateX(40%);
+    transform: scale(0.6) translateY(-20%) translateX(40%);
     
     @media (width > 750px) {
-        transform: scale(1.2) translateY(-40%) translateX(40%);
+        transform: scale(1.2) translateY(-40%) translateX(30%);
     }
     
     @media (width > 1200px) {
