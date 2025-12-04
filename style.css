@@ -4,9 +4,13 @@
     font-size: 100%;
     --maincolor: #181818;
     --lightcolor: white;
-    --article1: #FF2F00;
-    --article2: #3631FB;
+    --article1: #FF461D;
+    --article2: #4D64FF;
     --article3: #EB51FF; 
+    /* testing new colors */
+    /* --article1: #FF2F00;
+    --article2: #3631FB;
+    --article3: #EB51FF; */
     --spacing: 1rem;
 }
 
