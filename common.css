@@ -172,12 +172,12 @@ nav ol {
 nav ol li, summary {
     background-color: var(--accentcolor);
     color: var(--lightcolor);
-    padding-inline: calc(var(--spacing)*0.7);
-    padding-block: calc(var(--spacing)*1.2);
     text-align: center;
       a {
         text-decoration: none;
         display: block;
+        padding-inline: calc(var(--spacing)*0.7);
+        padding-block: calc(var(--spacing)*1.2);
     }
     @media (width > 950px) {
         padding-inline: calc(var(--spacing)*3);
@@ -189,6 +189,8 @@ nav ol li, summary {
 summary {
     background-color: var(--maincolor);
     cursor: pointer;
+    padding-inline: calc(var(--spacing)*0.7);
+    padding-block: calc(var(--spacing)*1.2);
 }
 
 /* to highlight the page it's on */
@@ -276,7 +278,9 @@ strong {
 }
 
 .bottom, .bottom2 {
+    a{
     padding: calc(var(--spacing)*2);
+    }
 
     @media (width > 1200px) {
         margin-inline-start: calc(var(--spacing)*20);  
