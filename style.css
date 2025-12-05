@@ -150,7 +150,8 @@ section ol {
 
 section ol li {
     text-align: left;
-    padding-block: var(--spacing);
+    padding: var(--spacing);
+    flex-grow: 1;
     p {
         color: var(--lightcolor);
         text-transform: none;
