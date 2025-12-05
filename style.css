@@ -103,13 +103,10 @@ p {
     }
 
     @media (width > 500px) {
-        margin-block-start: calc(var(--spacing)*12);
+  
         max-width: 70ch;
     }
-    @media (width > 1300px) {
-        margin-block-start: calc(var(--spacing)*10);
-        
-    }
+
 }
 
 
