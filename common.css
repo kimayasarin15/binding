@@ -302,7 +302,6 @@ a {
 }
 }
 
-
 svg {
     z-index: -10;
     max-width: 100%;
@@ -315,7 +314,6 @@ svg {
 main {
     padding-block-end: calc(var(--spacing)*6);
 }
-
 
 footer {
     border-block: none;
