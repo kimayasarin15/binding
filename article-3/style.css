@@ -42,20 +42,31 @@ svg {
 
 
 
-.pink {
+.svgparent {
     position: absolute;
-    transform: scale(0.6) translateY(-20%) translateX(40%);
-    
-    @media (width > 750px) {
-        transform: scale(1.2) translateY(-40%) translateX(30%);
-    }
-    
-    @media (width > 1200px) {
-        transform: scale(1.4) translateY(-30%) translateX(-30%);
+    z-index: -1;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.pink {
+    position: relative;
+    bottom: 15vh;
+    left: 20vh;
+    scale: 80%;
+
+     @media (width > 750px) {
+        scale: 100%;
+        left: 40vh;
     }
 
+    @media (width > 1200px) {
+        scale: 100%;
+        bottom: 20vh;
+        left:-30vh;
+    }
     path {
-        fill: var(--accentcolor);
+        fill: var(--article3);
     }
 }
 

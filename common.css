@@ -321,7 +321,7 @@ a {
 svg {
     z-index: -10;
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .svgparent {

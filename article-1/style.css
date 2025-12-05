@@ -34,12 +34,50 @@ h2 {
     }
 }
 
+
+.svgparent {
+    position: absolute;
+    z-index: -1;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.red {
+    position: relative;
+    bottom: 15vh;
+    left: 20vh;
+    scale: 80%;
+
+     @media (width > 750px) {
+        scale: 100%;
+        left: 40vh;
+    }
+
+    @media (width > 1200px) {
+        scale: 100%;
+        bottom: 20vh;
+        left:-30vh;
+    }
+    path {
+        fill: var(--article1);
+    }
+}
+
+/* svg {
+    z-index: -10;
+    max-width: 100%;
+    
+}
+
+
+
+
 .red {
     position: absolute;
-    transform: scale(0.6) translateY(-40%) translateX(40%);
+    transform: scale(0.7) translateY(-50%) translateX(-50%);
     
     @media (width > 750px) {
-        transform: scale(1.2) translateY(-40%) translateX(40%);
+        transform: scale(1.2) translateY(-40%) translateX(-30%);
     }
     
     @media (width > 1200px) {
@@ -49,6 +87,6 @@ h2 {
     path {
         fill: var(--article1);
     }
-}
+} */
 
 
