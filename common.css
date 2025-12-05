@@ -51,6 +51,7 @@ h1 {
     color: var(--maincolor);
     padding-block: calc(var(--spacing)*4);
     padding-inline: var(--spacing);
+    filter: drop-shadow(0 0.2rem 0.2rem rgb(24 24 24 / 25%));
 
     @media (width > 600px) {
         font-size: var(--typemedium3);
