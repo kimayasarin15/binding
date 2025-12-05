@@ -239,27 +239,26 @@ footer {
     width: 100%;
 }
 
+
 .red {
     position: relative;
-    top: -20vw;
-    left: -20vw;
+    inset-block-start: -20vw;
+    inset-inline-start: -20vw;
     scale: 0.8;
 
     @media (width > 750px) {
-        left: -40vw;
+        inset-inline-start: -40vw;
     }
     @media (width > 950px) {
         scale: 1;
-        top: -20vw;
-        left: -30vw;
+        inset-block-start: -20vw;
+        inset-inline-start: -30vw;
     }
     @media (width > 1200px) {
         scale: 1.2;
-        top: -10vw;
-        left: -10vw;
+        inset-block-start: -10vw;
+        inset-inline-start: -10vw;
     }
-
-
     path {
         fill: var(--article1);
     }
@@ -267,28 +266,28 @@ footer {
 
 .blue {
     position: relative;
-    top: -100vw;
-    left: 20vw;
+    inset-block-start: -100vw;
+    inset-inline-start: 20vw;
     scale: 0.8;
 
     @media (width > 750px) {
-        top: -80vw;
-        left: 10vw;
+        inset-block-start: -80vw;
+        inset-inline-start: 10vw;
     }
     @media (width > 950px) {
         scale: 1;
-        top: -60vw;
-        left: 10vw;
+        inset-block-start: -60vw;
+        inset-inline-start: 10vw;
     }
     @media (width > 1200px) {
         scale: 1.2;
-        top: -50vw;
-        left: 20vw;
+        inset-block-start: -50vw;
+        inset-inline-start: 20vw;
     }
 
     @media (width > 1500px) {
-        top: 5vw;
-        left: -20vw;
+        inset-block-start: 5vw;
+        inset-inline-start: -20vw;
     }
 
     path {
@@ -299,26 +298,26 @@ footer {
 .pink {
     position: relative;
     scale: 0.8;
-    top: -160vw;
+    inset-block-start: -160vw;
     
     @media (width > 750px) {
-        top: -190vw;
-        left: 30vw;
+        inset-block-start: -190vw;
+        inset-inline-start: 30vw;
     }
     @media (width > 950px) {
         scale: 1;
-        top: -150vw;
-        left: 50vw;
+        inset-block-start: -150vw;
+        inset-inline-start: 50vw;
     }
     @media (width > 1200px) {
         scale: 1.2;
-        top: -120vw;
-        left: 60vw;
+        inset-block-start: -120vw;
+        inset-inline-start: 60vw;
     } 
 
     @media (width > 1500px) {
-        top: -60vw;
-        left: 60vw;
+        inset-block-start: -60vw;
+        inset-inline-start: 60vw;
     }
     
   
