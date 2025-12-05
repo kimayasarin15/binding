@@ -8,14 +8,11 @@ h2 {
     border-style: none;
 }
 
-
 .author {
     p {
         line-height: var(--lineheight);
     }
 }
-
-
 
 h1 {
     @media (width > 950px) {
@@ -35,13 +32,6 @@ h1 {
     }
 }
 
-svg {
-    z-index: -10;
-    max-width: 100%;
-}
-
-
-
 .svgparent {
     position: absolute;
     z-index: -1;
@@ -51,20 +41,25 @@ svg {
 
 .pink {
     position: relative;
-    bottom: 15vh;
-    left: 20vh;
+    inset-block-end: 10vh;
+    inset-inline-start: 20vh;
     scale: 80%;
 
-     @media (width > 750px) {
+   @media (width > 500px) {
+        inset-block-end: 20vh;
+    }
+
+    @media (width > 750px) {
         scale: 100%;
-        left: 40vh;
+        inset-inline-start: 60vh;
     }
 
     @media (width > 1200px) {
         scale: 100%;
-        bottom: 20vh;
-        left:-30vh;
+        inset-block-end: 20vh;
+        inset-inline-start:-30vh;
     }
+    
     path {
         fill: var(--article3);
     }

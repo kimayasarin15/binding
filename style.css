@@ -7,10 +7,6 @@
     --article1: #FF461D;
     --article2: #4D64FF;
     --article3: #EB51FF; 
-    /* testing new colors */
-    /* --article1: #FF2F00;
-    --article2: #3631FB;
-    --article3: #EB51FF; */
     --spacing: 1rem;
 }
 body {
@@ -49,7 +45,6 @@ h2 {
         margin-inline-start: 0;
         font-size: var(--typemedium2);
     }
-
 }
 
 h3 {
@@ -73,7 +68,6 @@ h3 {
     background-color: var(--article3);
 }
 
-
 p {
     padding-inline: var(--spacing);
     color: var(--maincolor);
@@ -91,7 +85,6 @@ p {
     @media (width > 1200px) {
         margin-inline-start: calc(var(--spacing)*10);  
     }
-
 }
 
 .together {
@@ -106,10 +99,7 @@ p {
   
         max-width: 70ch;
     }
-
 }
-
-
 
 section ol {
     display: flex;
@@ -121,18 +111,13 @@ section ol {
 	> li::before {
 		content: counters(index, '.') '.';
 		counter-increment: index;
-	}
-
-    
+	}    
     @media (width > 950px) {
         flex-direction: row;
-        flex-wrap: nowrap;
-  
-        
+        flex-wrap: nowrap;  
     }
 }
 
-/* sometimes this hovers the whole block - sometimes it hovers each element need to fix */
 .articles  {
     @media (width > 950px) {
         :hover {
@@ -140,8 +125,6 @@ section ol {
         }
     }
 }
-
-
 
 section ol li {
     text-align: left;
@@ -152,7 +135,6 @@ section ol li {
         text-transform: none;
     }
 }
-
 
 section ol li::before {
     font-family: var(--fontfamily);
@@ -174,8 +156,6 @@ section ol li:last-child {
        background-color: var(--article3);  
 }
 
-
-
 span {
     color: var(--maincolor);
 }
@@ -189,7 +169,6 @@ span {
 a { 
     text-decoration: none;
 }
-
 
 .colophon {
     font-size: var(--typemedium);
@@ -220,25 +199,20 @@ a {
     display: inline-block;
 }
 
-/* repeated need to fix */
+
 footer {
     p {
-        text-transform: uppercase;
-        font-weight: var(--midweight);
-        font-size: var(--typesmall2);
         color:var(--lightcolor);
-        margin-inline: 0;  
     }
 }
-
-
+/* I manually asjusted my svgs relative to its parent using vw for now
+For future: use absolute and percentages */
 .svgparent {
     position: absolute;
     z-index: -1;
     overflow-x: hidden;
     width: 100%;
 }
-
 
 .red {
     position: relative;
@@ -325,77 +299,3 @@ footer {
         fill: var(--article3);
     }
 }
-
-
-
-
-
-
-/* 
-
-.svgparent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    overflow-x: hidden;
-
-    @media (width > 500px) {
-        flex-direction: row;
-        block-size: 50rem;
-        align-items:start;
-    }
-}
-
-
-
-.red {
-    transform: scale(0.8) translateY(-30%) translateX(-20%);
-    @media (width > 500px) {
-        transform: scale(2) translateY(0);
-    }
-    @media (width > 950px) {
-        transform: scale(1.5);
-    }
-    @media (width > 1200px) {
-        transform: scale(1.5) translateY(-20%) translateX(-20%);
-    }
-    path {
-        fill: var(--article1);
-    }
-}
-
-.blue {
-    position: relative;
-    transform: scale(0.8) translateY(-120%) translateX(30%);
-    @media (width > 500px) {
-       transform: scale(2) translateY(50%) translateX(10%);
-    }
-    @media (width > 950px) {
-        transform: scale(1.5) translateY(50%) translateX(10%);
-    }
-    @media (width > 1200px) {
-        transform: scale(1.5) translateY(20%) translateX(0);
-    }
-    path {
-        fill: var(--article2);
-    }
-}
-
-.pink {
-    position: relative;
-    transform: scale(0.8) translateY(-200%) translateX(-20%);
-    @media (width > 500px) {
-        transform: scale(2) translateY(30%) translateX(20%);
-    }
-    @media (width > 950px) {
-        transform: scale(1.5) translateY(10%) translateX(20%);
-    }
-    @media (width > 1200px) {
-        transform: scale(1.5) translateY(10%) translateX(20%);
-    }
-    path {
-        fill: var(--article3);
-    }
-} */

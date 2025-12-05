@@ -2,21 +2,11 @@
 
 
 :root {
-    /* --accentcolor: #FF2F00; */
     --accentcolor: #FF461D;
 }
 
-
 h2 {
     border-style: none;
-}
-
-.backtop {
-    p {
-        padding-block: var(--spacing);
-        color: var(--maincolor);
-        padding-inline: 0;
-    }
 }
 
 .author {
@@ -25,15 +15,12 @@ h2 {
     }
 }
 
-
-
 .bottom2 {
     background-color: var(--article2);
     @media (width > 850px) {
         margin-inline-start: calc(var(--spacing)*10); 
     }
 }
-
 
 .svgparent {
     position: absolute;
@@ -44,49 +31,28 @@ h2 {
 
 .red {
     position: relative;
-    bottom: 15vh;
-    left: 20vh;
+    inset-block-end: 10vh;
+    inset-inline-start: 20vh;
     scale: 80%;
 
-     @media (width > 750px) {
-        scale: 100%;
-        left: 40vh;
+    @media (width > 500px) {
+        inset-block-end: 20vh;
     }
 
-    @media (width > 1200px) {
-        scale: 100%;
-        bottom: 20vh;
-        left:-30vh;
-    }
-    path {
-        fill: var(--article1);
-    }
-}
-
-/* svg {
-    z-index: -10;
-    max-width: 100%;
-    
-}
-
-
-
-
-.red {
-    position: absolute;
-    transform: scale(0.7) translateY(-50%) translateX(-50%);
-    
     @media (width > 750px) {
-        transform: scale(1.2) translateY(-40%) translateX(-30%);
-    }
-    
-    @media (width > 1200px) {
-        transform: scale(1.4) translateY(-30%) translateX(-30%);
+        scale: 100%;
+        inset-inline-start: 60vh;
     }
 
+    @media (width > 1200px) {
+        scale: 100%;
+        inset-block-end: 20vh;
+        inset-inline-start:-30vh;
+    }
     path {
         fill: var(--article1);
     }
-} */
+}
+
 
 

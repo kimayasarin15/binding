@@ -8,16 +8,12 @@
     --article1: #FF461D;
     --article2: #4D64FF;
     --article3: #EB51FF; 
-     /* testing new colors */
-    /* --article1: #FF2F00;
-    --article2: #3631FB;
-    --article3: #EB51FF; */
     --spacing: 1rem;
     --fontfamily: "Poppins", sans-serif;
     --borderwidth1: 0.1rem;
     --borderwidth2: 4rem;
 
-    /* font sizes tried to use variables for typesize */
+    /* font sizes (using variables) */
     --typebase: 1rem;
     --typesmall: 1.25rem;
     --typesmall2: 1.5rem;
@@ -31,10 +27,9 @@
     --lineheight: 90%;
     --plineheight: 140%;
 
-    /* weight */
+    /* font weight */
     --midweight: 500;
     --heavyweight: 700;
-
 }
 
 body {
@@ -47,8 +42,7 @@ header {
 
 }
 
-
-/* my h1 */
+/* my headings */
 h1 {
     font-size: var(--typemedium2); 
     font-weight: var(--heavyweight);
@@ -74,7 +68,6 @@ h1 {
     }
 }
 
-
 h2 {
     border-block-end: solid;
     border-color: var(--maincolor);
@@ -86,7 +79,6 @@ h2 {
     text-transform: uppercase;
     padding-block: calc(var(--spacing)*2);
     padding-inline: var(--spacing);
-    /* max-width: 40ch; */
 
     @media (width > 600px) {
         font-size: var(--typemedium);
@@ -102,13 +94,13 @@ h2 {
 
 }
 
+/* body copy */
 p, .open, blockquote {
     font-size: var(--typebase);
     line-height: var(--plineheight);
     color: var(--maincolor);
     padding-inline: var(--spacing);
     padding-block: var(--spacing);
-    /* text-wrap: balance; */
 
     @media (width > 600px ) {
         font-size: var(--typesmall);
@@ -139,11 +131,7 @@ span {
     display: inline-block;
 }
 
-.backtop {
-    span {
-        padding: calc(var(--spacing)*2);
-    }
-}
+
 
 /* my top nav bar for getting between pages */
 nav ol, summary {
@@ -204,12 +192,9 @@ summary {
     padding-block: calc(var(--spacing)*1.2);
 }
 
-/* to highlight the page it's on */
 #select {
     background-color: var(--maincolor);
 }
-
-
 
 
 /* author information */
@@ -258,7 +243,6 @@ strong {
 /* footer  */
 .backtop {
     padding-block: calc(var(--spacing)*4);
-    /* padding-inline-start: var(--spacing); */
     margin-block-end: calc(var(--spacing)*4);
     font-size: var(--typesmall2);
     font-weight: var(--midweight);
@@ -271,6 +255,9 @@ strong {
     border-bottom-width: var(--borderwidth1);
     display: flex;
     flex-direction: column;
+    span {
+        padding: calc(var(--spacing)*2);
+    }
 
     @media (width >850px) {
         flex-direction: row;
@@ -282,8 +269,10 @@ strong {
         scale: 105%;
         }
     }
-  
-    
+    @media (width >1200px) {
+        padding-inline: calc(var(--spacing)*2);
+    }
+     
 }
 
 .bottom, .bottom2 {
@@ -293,10 +282,6 @@ strong {
 
     @media (width > 1200px) {
         margin-inline-start: calc(var(--spacing)*20);  
-        a{
-        padding-inline: calc(var(--spacing)*4);
-        }
-        
     }
 }
 
@@ -321,91 +306,11 @@ a {
 svg {
     z-index: -10;
     max-width: 100%;
-    /* overflow-x: hidden; */
 }
 
 .svgparent {
     position: absolute;
 }
-
-
-
-/* 
-.red {
-    transform: scale(0.8) translateY(-30%) translateX(-20%);
-    @media (width > 500px) {
-        transform: scale(2) translateY(0);
-    }
-    @media (width > 950px) {
-        transform: scale(1.5) translateY(0);
-    }
-    path {
-        fill: var(--article1);
-    }
-}
-
-.blue {
-    position: relative;
-    transform: scale(0.8) translateY(-120%) translateX(30%);
-    @media (width > 500px) {
-        transform: scale(2) translateY(30%) translateX(50%);
-    }
-    @media (width > 950px) {
-        transform: scale(1.5) translateY(20%) translateX(70%);
-    }
-    path {
-        fill: var(--article2);
-    }
-}
-
-.pink {
-    position: relative;
-    transform: scale(0.8) translateY(-200%) translateX(-20%);
-    @media (width > 500px) {
-        transform: scale(2) translateY(50%) translateX(-50%);
-    }
-     @media (width > 950px) {
-        transform: scale(1.5) translateY(50%) translateX(-70%);
-    }
-    path {
-        fill: var(--article3);
-    }
-} */
-
-
-
-
-
-
-/* .blue {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    z-index: -3;
-}
-
-.blue1 { 
-    position: absolute;
-    z-index: -1;
-    width: 60%; 
-    height: 40%; 
-    border-color: var(--article2);
-    border-style: solid;
-    border-width: 1rem;
-    border-inline-end-width: 15rem;
-    top: calc(var(--spacing)*10);
-    left: var(--spacing);
-}
-
-.blue2 { 
-    position: absolute;
-    z-index: -1;
-    width: 50%; 
-    height: 43%;  
-    background-color: var(--article2); 
-    top: calc(var(--spacing)*12);
-    left: calc(var(--spacing)*2);
-} */
 
 main {
     padding-block-end: calc(var(--spacing)*6);
@@ -425,6 +330,7 @@ footer {
         padding: calc(var(--spacing)*2);
         justify-content: center;
     }
+    /* Rijk's help for footer grid */
     @media (width>600px) {
         	display: grid;
 	    grid-template-areas:
@@ -443,8 +349,6 @@ img {
     block-size: 23rem;
     }
 }
-
-
 
 .first {
     background-color: var(--article1);
