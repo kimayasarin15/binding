@@ -230,7 +230,7 @@ For future: use absolute and percentages */
     }
     @media (width > 1200px) {
         scale: 1.2;
-        inset-block-start: -10vw;
+        inset-block-start: -20vw;
         inset-inline-start: -10vw;
     }
     path {
@@ -290,7 +290,7 @@ For future: use absolute and percentages */
     } 
 
     @media (width > 1500px) {
-        inset-block-start: -60vw;
+        inset-block-start: -55vw;
         inset-inline-start: 60vw;
     }
     
