@@ -103,7 +103,7 @@ p {
     }
 
     @media (width > 500px) {
-        margin-block-start: calc(var(--spacing)*4);
+        margin-block-start: calc(var(--spacing)*12);
         max-width: 70ch;
     }
     @media (width > 1300px) {
@@ -236,6 +236,108 @@ footer {
 
 
 .svgparent {
+    position: absolute;
+    z-index: -1;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.red {
+    position: relative;
+    top: -20vw;
+    left: -20vw;
+    scale: 0.8;
+
+    @media (width > 750px) {
+        left: -40vw;
+    }
+    @media (width > 950px) {
+        scale: 1;
+        top: -20vw;
+        left: -30vw;
+    }
+    @media (width > 1200px) {
+        scale: 1.2;
+        top: -10vw;
+        left: -10vw;
+    }
+
+
+    path {
+        fill: var(--article1);
+    }
+}
+
+.blue {
+    position: relative;
+    top: -100vw;
+    left: 20vw;
+    scale: 0.8;
+
+    @media (width > 750px) {
+        top: -80vw;
+        left: 10vw;
+    }
+    @media (width > 950px) {
+        scale: 1;
+        top: -60vw;
+        left: 10vw;
+    }
+    @media (width > 1200px) {
+        scale: 1.2;
+        top: -50vw;
+        left: 20vw;
+    }
+
+    @media (width > 1500px) {
+        top: 5vw;
+        left: -20vw;
+    }
+
+    path {
+        fill: var(--article2);
+    }
+}
+
+.pink {
+    position: relative;
+    scale: 0.8;
+    top: -160vw;
+    
+    @media (width > 750px) {
+        top: -190vw;
+        left: 30vw;
+    }
+    @media (width > 950px) {
+        scale: 1;
+        top: -150vw;
+        left: 50vw;
+    }
+    @media (width > 1200px) {
+        scale: 1.2;
+        top: -120vw;
+        left: 60vw;
+    } 
+
+    @media (width > 1500px) {
+        top: -60vw;
+        left: 60vw;
+    }
+    
+  
+    path {
+        fill: var(--article3);
+    }
+}
+
+
+
+
+
+
+/* 
+
+.svgparent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,7 +345,6 @@ footer {
     position: absolute;
     overflow-x: hidden;
 
-    /* I tried to make my svgs absolute with this relative but it didn't work so I've adjusted the block-size to get it to work */
     @media (width > 500px) {
         flex-direction: row;
         block-size: 50rem;
@@ -301,4 +402,4 @@ footer {
     path {
         fill: var(--article3);
     }
-}
+} */
