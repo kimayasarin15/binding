@@ -135,18 +135,15 @@ section ol {
 }
 
 /* sometimes this hovers the whole block - sometimes it hovers each element need to fix */
-.articles {
+.articles  {
     @media (width > 950px) {
         :hover {
-        scale: 105%;
+        opacity: 80%;
         }
     }
 }
 
-.articles li a {
-    display: block;
-    
-}
+
 
 section ol li {
     text-align: left;
@@ -161,7 +158,7 @@ section ol li {
 
 section ol li::before {
     font-family: var(--fontfamily);
-    font-weight: 700;
+    font-weight: var(--heavyweight);
     font-size: var(--typemedium);
     padding: var(--spacing);
     color: var(--lightcolor);
